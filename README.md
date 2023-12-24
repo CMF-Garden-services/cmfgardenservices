@@ -1,1 +1,1 @@
-This is a landing page for a small landscaping business
+This is a landing page for a landscaping business

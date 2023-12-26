@@ -20,14 +20,14 @@ const Upperbar = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-`
-
-const Middlebar = styled.div`
+    `
+    
+    const Middlebar = styled.div`
     width: 100%;
     height: calc(100% - ${upperbarheight} - ${bottombarheight});
     padding: 0 20vw;
     text-align: center;
-`
+    `
 
 const Logo = styled.img`
     height: 100%;
@@ -41,9 +41,12 @@ const Bottombar = styled.div`
     justify-content: center;
     align-items: center;
     gap: 60px;
-`
-
-const Menuitem = styled.a`
+    @media (max-width: 700px) {
+        gap: 4vw;        
+    }
+    `
+    
+    const Menuitem = styled.a`
     height: 100%;
     padding: 0 7px;
     text-decoration: none;
@@ -54,12 +57,16 @@ const Menuitem = styled.a`
     &&:hover {
         background-color: #3F8E3D;
     }
-`
-
-const Gardening = styled.div`
+    `
+    
+    const Gardening = styled.div`
     font-family: Rhodium Libre;
     font-size: 1.5rem;
     color: white;
+    @media (max-width: 700px) {
+        font-size: 1rem;
+        width: 150px;
+    }
 `
 
 const Button = styled.button`
@@ -74,6 +81,10 @@ const Button = styled.button`
     }
     &&:active {
         transform: translate(1px, 1px);
+    }
+    @media  (max-width: 700px) {
+        font-size: 0.7rem;
+        width: 90px;
     }
 `
 

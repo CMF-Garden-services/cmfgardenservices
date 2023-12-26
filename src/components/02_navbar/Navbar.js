@@ -1,4 +1,4 @@
-import { Wrapper, Upperbar, Middlebar, Bottombar, Logo, Menuitem, LogoWrapper } from "./NavbarStyle";
+import { Wrapper, Upperbar, Middlebar, Bottombar, Logo, Menuitem } from "./NavbarStyle";
 import CMF from "../../assets/CMF.png";
 
 const Navbar = () => {
@@ -6,9 +6,7 @@ const Navbar = () => {
         <Wrapper>
             <Upperbar></Upperbar>
             <Middlebar>
-                <LogoWrapper>
                     <Logo src={CMF} />
-                </LogoWrapper>
             </Middlebar>
             <Bottombar>
                 <Menuitem href="#home">Home</Menuitem>

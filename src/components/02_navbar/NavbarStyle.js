@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { sizes } from "../01_constants/Sizes"
 
-const { navbarheight } = sizes
+const { navbarheight, upperbarheight, bottombarheight } = sizes
 
 const Wrapper = styled.div`
     position: fixed;
@@ -9,43 +9,29 @@ const Wrapper = styled.div`
     left: 0;
     height: ${navbarheight};
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     z-index: 99;
 `
 
 const Upperbar = styled.div`
     width: 100%;
-    // height: 50px;
-    flex: 1;
+    height: ${upperbarheight};
     background-color: #236604;
 `
 
 const Middlebar = styled.div`
     width: 100%;
-    // height: 120px;
-    flex: 2.5;
+    height: calc(100% - ${upperbarheight} - ${bottombarheight});
     padding: 0 20vw;
     text-align: center;
-    background-color: white;
-`
-
-const LogoWrapper = styled.div`
-    height: 100%;
-    max-height: 100%;
-    background-color: red;
 `
 
 const Logo = styled.img`
-    // object-fit: cover;
     height: 100%;
 `
 
 const Bottombar = styled.div`
     width: 100%;
-    // height: 40px;
-    flex: 1;
+    height: ${bottombarheight};
     background-color: #67BC3F;
     display: flex;
     justify-content: center;
@@ -67,4 +53,4 @@ const Menuitem = styled.a`
 `
 
 
-export {Wrapper, Upperbar, Middlebar, Bottombar, LogoWrapper, Logo, Menuitem }
+export {Wrapper, Upperbar, Middlebar, Bottombar, Logo, Menuitem }

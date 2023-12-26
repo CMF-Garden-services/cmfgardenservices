@@ -7,8 +7,8 @@ import Services from './components/03_sections/03_services/Services';
 function App() {
   return (
     <div className="App">
-          {/* <Navbar /> */}
-          <Home />
+          <Navbar />
+          {/* <Home /> */}
           {/* <About />
           <Services /> */}
     </div>

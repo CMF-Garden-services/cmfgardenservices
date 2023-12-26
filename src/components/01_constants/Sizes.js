@@ -1,4 +1,5 @@
 export const sizes = {
     navbarheight: "210px",
-    color: "red"
+    upperbarheight: "50px",
+    bottombarheight: "35px",
 }

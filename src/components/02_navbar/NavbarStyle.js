@@ -59,7 +59,7 @@ const Middlebar = styled.div`
     justify-content: space-between;
     align-items: center;
     @media (max-width: 700px) {
-        padding: 0 10vw;
+        padding: 0 6vw;
     }
 `
 

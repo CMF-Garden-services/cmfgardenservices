@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <Wrapper>
             <Upperbar>
-                <Gardening>CMF Gardening Services</Gardening>
+                <Gardening>CMF Garden Services</Gardening>
                 <Button>Request a call back</Button>
             </Upperbar>
             <Middlebar>

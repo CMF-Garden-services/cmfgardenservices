@@ -1,10 +1,13 @@
-import { Wrapper, Upperbar, Middlebar, Bottombar, Logo, Menuitem } from "./NavbarStyle";
+import { Wrapper, Upperbar, Middlebar, Bottombar, Logo, Menuitem, Gardening, Button } from "./NavbarStyle";
 import CMF from "../../assets/CMF.png";
 
 const Navbar = () => {
     return (
         <Wrapper>
-            <Upperbar></Upperbar>
+            <Upperbar>
+                <Gardening>CMF Gardening Services</Gardening>
+                <Button>Request a call back</Button>
+            </Upperbar>
             <Middlebar>
                     <Logo src={CMF} />
             </Middlebar>

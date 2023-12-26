@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { sizes } from "../01_constants/Sizes"
 
-const { navbarheight, upperbarheight, bottombarheight } = sizes
+const { navbarheight, upperbarheight, bottombarheight, navbarpaddings } = sizes
 
 const Wrapper = styled.div`
     position: fixed;
@@ -15,7 +15,11 @@ const Wrapper = styled.div`
 const Upperbar = styled.div`
     width: 100%;
     height: ${upperbarheight};
+    padding: 0 ${navbarpaddings};
     background-color: #236604;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `
 
 const Middlebar = styled.div`
@@ -52,5 +56,25 @@ const Menuitem = styled.a`
     }
 `
 
+const Gardening = styled.div`
+    font-family: Rhodium Libre;
+    font-size: 1.5rem;
+    color: white;
+`
 
-export {Wrapper, Upperbar, Middlebar, Bottombar, Logo, Menuitem }
+const Button = styled.button`
+    width: 180px;
+    padding: 5px 5px;
+    color: white;
+    background-color: #549634;
+    border-radius: 7px;
+    border: solid 0.5px white;
+    &&:hover {
+        cursor: pointer;
+    }
+    &&:active {
+        transform: translate(1px, 1px);
+    }
+`
+
+export {Wrapper, Upperbar, Middlebar, Bottombar, Logo, Menuitem, Gardening, Button }

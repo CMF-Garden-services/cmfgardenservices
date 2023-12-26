@@ -4,7 +4,7 @@ import { sizes } from "../01_constants/Sizes"
 const { navbarheight, upperbarheight, bottombarheight, navbarpaddings } = sizes
 
 const Wrapper = styled.div`
-    position: fixed;
+    // position: fixed;
     top: 0;
     left: 0;
     height: ${navbarheight};
@@ -21,44 +21,7 @@ const Upperbar = styled.div`
     justify-content: space-between;
     align-items: center;
     `
-    
-    const Middlebar = styled.div`
-    width: 100%;
-    height: calc(100% - ${upperbarheight} - ${bottombarheight});
-    padding: 0 20vw;
-    text-align: center;
-    `
 
-const Logo = styled.img`
-    height: 100%;
-`
-
-const Bottombar = styled.div`
-    width: 100%;
-    height: ${bottombarheight};
-    background-color: #67BC3F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    @media (max-width: 700px) {
-        gap: 4vw;        
-    }
-    `
-    
-    const Menuitem = styled.a`
-    height: 100%;
-    padding: 0 7px;
-    text-decoration: none;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    color: white;
-    &&:hover {
-        background-color: #3F8E3D;
-    }
-    `
-    
     const Gardening = styled.div`
     font-family: Rhodium Libre;
     font-size: 1.5rem;
@@ -87,5 +50,68 @@ const Button = styled.button`
         width: 90px;
     }
 `
+    
+const Middlebar = styled.div`
+    width: 100%;
+    height: calc(100% - ${upperbarheight} - ${bottombarheight});
+    padding: 0 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 700px) {
+        padding: 0 10vw;
+    }
+`
 
-export {Wrapper, Upperbar, Middlebar, Bottombar, Logo, Menuitem, Gardening, Button }
+const Logo = styled.img`
+    height: 100%;
+`
+
+const Warwickshire = styled.div`
+    width: 300px;
+    font-size: 1.2rem;
+    font-style: italic;
+    @media (max-width: 700px) {
+        font-size: 0.8rem;
+    }
+`
+
+const Phone = styled.div`
+    width: 300px;
+    text-align: right;
+    font-size: 2rem;
+    @media (max-width: 700px) {
+        font-size: 1.2rem;
+    }
+`
+
+const Bottombar = styled.div`
+    width: 100%;
+    height: ${bottombarheight};
+    background-color: #67BC3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border-bottom: solid 1px white;
+    @media (max-width: 700px) {
+        gap: 4vw;        
+    }
+    `
+    
+    const Menuitem = styled.a`
+    height: 100%;
+    padding: 0 7px;
+    text-decoration: none;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: white;
+    &&:hover {
+        background-color: #3F8E3D;
+    }
+    `
+    
+
+
+export {Wrapper, Upperbar, Middlebar, Warwickshire, Phone, Bottombar, Logo, Menuitem, Gardening, Button }

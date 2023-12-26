@@ -1,17 +1,10 @@
-import { Wrapper, ImageWrapper, Image } from "./HomeStyle";
-import one from "../../../assets/01.jpg";
-import two from "../../../assets/02.jpg";
-import three from "../../../assets/03.jpg";
-import cmf from "../../../assets/CMF.png"
+import { Wrapper, Image } from "./HomeStyle";
+import landscape from "../../../assets/landscape.jpg"
 
 const Home = () => {
     return (
         <Wrapper>
-            <ImageWrapper>
-                <Image id="home" src={cmf} />
-            </ImageWrapper>
-            {/* <Image src={two} />
-            <Image src={three} /> */}
+                <Image id="home" src={landscape} />
         </Wrapper>
     )
 }

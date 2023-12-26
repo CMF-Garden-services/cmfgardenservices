@@ -6,17 +6,17 @@ const { navbarheight } = sizes
 const Wrapper = styled.div`
     position: absolute;
     width: 100%;
-    height: ${navbarheight};
-    height: 250px;
-    background-color: lightgray;
-`
-
-const ImageWrapper = styled.div`
+    `
+    
+    const Image = styled.img`
+    width: 100%;
     height: 100%;
+    height: 400px;
+    object-fit: cover;
+    @media (max-width: 700px) {
+        height: 150px;
+
+    }
 `
 
-const Image = styled.img`
-    height: 100%;
-`
-
-export {Wrapper, ImageWrapper, Image}
+export {Wrapper, Image}

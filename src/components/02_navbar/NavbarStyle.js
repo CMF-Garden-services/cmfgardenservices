@@ -70,7 +70,7 @@ const Logo = styled.img`
 const Warwickshire = styled.div`
     width: 300px;
     font-size: 1.2rem;
-    font-style: italic;
+    // font-style: italic;
     @media (max-width: 700px) {
         font-size: 0.8rem;
     }

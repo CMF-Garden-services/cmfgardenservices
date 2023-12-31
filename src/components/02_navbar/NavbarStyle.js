@@ -98,7 +98,7 @@ const Bottombar = styled.div`
     align-items: center;
     gap: 60px;
     @media (max-width: 700px) {
-        gap: 2vw;        
+        gap: 1.8vw;        
     }
     `
     

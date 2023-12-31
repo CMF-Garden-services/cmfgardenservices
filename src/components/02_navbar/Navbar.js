@@ -9,9 +9,10 @@ const Navbar = () => {
                 <Button>Request a call back</Button>
             </Upperbar>
             <Middlebar>
-                    <Warwickshire>Warwickshire-Worcestershire-Gloucestershire-Oxfordshire</Warwickshire>
+                    {/* <Warwickshire>Solihull - <br/>Stratford Upon Avon</Warwickshire> */}
+                    <Warwickshire>Stratford Upon Avon -  <br/>Solihull</Warwickshire>
                     <Logo src={CMF} />
-                    <Phone>0777 111-222</Phone>
+                    <Phone>07873 122-257</Phone>
             </Middlebar>
             <Bottombar>
                 <Menuitem href="#home">Home</Menuitem>

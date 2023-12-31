@@ -5,8 +5,8 @@ const { navbarheight, upperbarheight, bottombarheight, navbarpaddings } = sizes
 
 const Wrapper = styled.div`
     // position: fixed;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     height: ${navbarheight};
     width: 100%;
     z-index: 99;
@@ -69,7 +69,8 @@ const Logo = styled.img`
 
 const Warwickshire = styled.div`
     width: 300px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.3;
     @media (max-width: 700px) {
         font-size: 0.8rem;
     }
@@ -92,7 +93,7 @@ const Bottombar = styled.div`
     justify-content: center;
     align-items: center;
     gap: 60px;
-    border-bottom: solid 1px white;
+    // border-bottom: solid 1px white;
     @media (max-width: 700px) {
         gap: 4vw;        
     }

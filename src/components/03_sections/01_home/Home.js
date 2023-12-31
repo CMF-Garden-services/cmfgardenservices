@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <Wrapper>
                 {/* <Image id="home" src={test4} /> */}
-                <Image id="home" src={test4a} />
+                <Image id="home" src={test4} />
         </Wrapper>
     )
 }

@@ -20,6 +20,9 @@ const Upperbar = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 700px) {
+        padding: 0 45px;
+    }
     `
 
     const Gardening = styled.div`
@@ -80,6 +83,7 @@ const Phone = styled.div`
     width: 300px;
     text-align: right;
     font-size: 2rem;
+    line-height: 1.3;
     @media (max-width: 700px) {
         font-size: 1rem;
     }
@@ -93,9 +97,8 @@ const Bottombar = styled.div`
     justify-content: center;
     align-items: center;
     gap: 60px;
-    // border-bottom: solid 1px white;
     @media (max-width: 700px) {
-        gap: 4vw;        
+        gap: 2vw;        
     }
     `
     

@@ -11,7 +11,7 @@ const Navbar = () => {
             <Middlebar>
                     <Warwickshire>Stratford Upon Avon -  <br/>Solihull</Warwickshire>
                     <Logo src={CMF} />
-                    <Phone>07873 122-257</Phone>
+                    <Phone>07873-122257</Phone>
             </Middlebar>
             <Bottombar>
                 <Menuitem href="#home">Home</Menuitem>

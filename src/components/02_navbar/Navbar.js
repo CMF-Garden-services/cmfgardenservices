@@ -1,5 +1,5 @@
 import { Wrapper, Upperbar, Middlebar, Warwickshire, Phone, Bottombar, Logo, Menuitem, Gardening, Button } from "./NavbarStyle";
-import CMF from "../../assets/CMF.png";
+import CMF from "../../assets/01_navbar/CMF.png";
 
 const Navbar = () => {
     return (

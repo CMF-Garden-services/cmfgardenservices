@@ -4,17 +4,14 @@ import { sizes } from "../../01_constants/Sizes"
 const { navbarheight } = sizes
 
 const Wrapper = styled.div`
-
-    `
-    
-    const Image = styled.img`
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    @media (max-width: 700px) {
-        height: 150px;
-
-    }
+    position: relative;
+    z-index: ${(({zIndex}) => zIndex ? 2 : 0)};
 `
 
-export {Wrapper, Image}
+const MainImage = styled.img`
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+`
+
+export {Wrapper, MainImage }

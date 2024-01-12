@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 `
 
 const AboutText = styled.div`
-    width: 30vw;
+    width: 50vw;
     height: 200vh;
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;

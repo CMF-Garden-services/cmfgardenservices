@@ -6,6 +6,9 @@ const { navbarheight } = sizes
 const { lightgreen, backgroundgreen } = colors
 
 const Wrapper = styled.div`
+position: absolute;
+top: 0;
+left: 0;
 `
 
 const NavbarWrapper = styled.div`

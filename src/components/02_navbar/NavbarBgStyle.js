@@ -7,11 +7,10 @@ const NavbarBgWrapper = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    -webkit-backface-visibility: hidden;
     width: 100%;
     height: ${navbarheight};
-    background-color: darkblue;
-    opacity: 0.95;
+    background-color: darkgreen;
+    opacity: 0.9;
     z-index: 1;
 `
 

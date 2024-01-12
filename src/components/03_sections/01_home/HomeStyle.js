@@ -5,7 +5,7 @@ const { navbarheight } = sizes
 
 const Wrapper = styled.div`
     position: relative;
-    z-index: ${(({zIndex}) => zIndex ? 0 : 0)};
+    z-index: ${(({zIndex}) => zIndex ? 2 : 0)};
 `
 
 const MainImage = styled.img`

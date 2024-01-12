@@ -11,6 +11,7 @@ const Wrapper = styled.div`
 const NavbarWrapper = styled.div`
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: ${navbarheight};
     // background-color: lightblue;
@@ -22,6 +23,7 @@ const NavbarWrapper = styled.div`
 const NavbarBg = styled.div`
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: ${navbarheight};
     background-color: darkgreen;

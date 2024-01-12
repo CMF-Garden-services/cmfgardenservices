@@ -5,9 +5,6 @@ import { colors } from "../01_constants/Colors"
 const { navbarheight } = sizes
 const { lightgreen, backgroundgreen } = colors
 
-const Wrapper = styled.div`
-`
-
 const NavbarWrapper = styled.div`
     position: fixed;
     top: 0;
@@ -21,16 +18,6 @@ const NavbarWrapper = styled.div`
     z-index: 3;
 `
 
-const NavbarBg = styled.div`
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    width: 100%;
-    height: ${navbarheight};
-    background-color: darkblue;
-    opacity: 0.95;
-    z-index: 1;
-`
 
-export {Wrapper, NavbarWrapper, NavbarBg }
+
+export { NavbarWrapper }

@@ -4,8 +4,3 @@
     font-family: Montserrat;
     /* font-family: Rhodium Libre; */
 }
-
-.app {
-    position: fixed;
-    overflow: scroll;
-}

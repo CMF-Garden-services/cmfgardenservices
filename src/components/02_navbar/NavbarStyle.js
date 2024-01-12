@@ -6,15 +6,13 @@ const { navbarheight } = sizes
 const { lightgreen, backgroundgreen } = colors
 
 const Wrapper = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
 `
 
 const NavbarWrapper = styled.div`
     position: fixed;
     top: 0;
     left: 0;
+    -webkit-backface-visibility: hidden;
     width: 100%;
     height: ${navbarheight};
     // background-color: lightblue;
@@ -27,9 +25,10 @@ const NavbarBg = styled.div`
     position: fixed;
     top: 0;
     left: 0;
+    -webkit-backface-visibility: hidden;
     width: 100%;
     height: ${navbarheight};
-    background-color: darkgreen;
+    background-color: darkblue;
     opacity: 0.95;
     z-index: 1;
 `

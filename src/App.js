@@ -11,7 +11,7 @@ function App() {
           <Navbar />
           <NavbarBg />
           <Home />
-          <About />
+          {/* <About /> */}
     </div>
   );
 }

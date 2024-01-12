@@ -9,10 +9,9 @@ const NavbarWrapper = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    -webkit-backface-visibility: hidden;
     width: 100%;
     height: ${navbarheight};
-    // background-color: lightblue;
+    // background-color: lightbrown;
     // opacity: 0.2;
     color: white;
     z-index: 3;

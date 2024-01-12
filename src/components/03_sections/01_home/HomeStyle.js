@@ -14,4 +14,10 @@ const MainImage = styled.img`
     height: 400px;
 `
 
-export {Wrapper, MainImage }
+const Test = styled.div`
+    width: 100vw;
+    height: 200vh;
+    background-color: lightgray;
+`
+
+export {Wrapper, MainImage, Test }

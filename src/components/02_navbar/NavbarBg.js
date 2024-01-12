@@ -2,7 +2,7 @@ import { NavbarBgWrapper } from "./NavbarBgStyle";
 
 const NavbarBg = () => {
     return (
-        <NavbarBgWrapper />
+        <NavbarBgWrapper></NavbarBgWrapper>
     )
 }
 

@@ -6,6 +6,6 @@
 }
 
 .app {
-    position: absolute;
-    
+    position: fixed;
+    overflow: scroll;
 }

@@ -10,10 +10,10 @@ const NavbarWrapper = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: ${navbarheight};
-    // background-color: lightbrown;
-    // opacity: 0.2;
+    // height: ${navbarheight};
+    height: 70px;
     color: white;
+    font-size: 2rem;
     z-index: 3;
 `
 

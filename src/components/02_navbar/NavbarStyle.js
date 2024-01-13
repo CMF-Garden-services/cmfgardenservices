@@ -47,6 +47,8 @@ const HambWrapper = styled.div`
     height: 100%;
     display: none;    
     @media (max-width: 800px) {
+        color: white;
+        font-size: 30px;
         display: flex;
         align-items: center;
     }

@@ -1,5 +1,6 @@
-import { NavbarWrapper, Logo, MenuWrapper, MenuItem  } from "./NavbarStyle";
+import { NavbarWrapper, Logo, MenuWrapper, MenuItem, HambWrapper  } from "./NavbarStyle";
 import logo from "../../assets/01_navbar/CMF.png"
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
     return (
@@ -12,6 +13,7 @@ const Navbar = () => {
                     <MenuItem href="#">Locations</MenuItem>
                     <MenuItem href="#">Contacts</MenuItem>
                 </MenuWrapper>
+                <HambWrapper><MenuIcon fontSize="large"/></HambWrapper>
             </NavbarWrapper>
     )
 }

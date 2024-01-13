@@ -8,7 +8,8 @@ const NavbarBgWrapper = styled.div`
     width: 100%;
     height: ${navbarheight};
     background-color: #172B1C;
-    opacity: 0.95;
+    background-color: #041A09;
+    opacity: 0.93;
     z-index: 1;
 `
 

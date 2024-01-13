@@ -19,6 +19,8 @@ const Home = () => {
                 setZIndex(0)
             }
         }
+        
+
         window.addEventListener("scroll", showBackground)
         return() => {
             window.removeEventListener("keydown", showBackground)

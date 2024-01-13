@@ -8,14 +8,16 @@ const NavbarWrapper = styled.div`
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    width: ${wrapperwidth};
     height: ${navbarheight};
-    // -webkit-backface-visibility: hidden;
+    width: ${wrapperwidth};
     font-size: 1rem;
     z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1100px) {
+        width: 90%;
+    }
 `
 
 const Logo = styled.img`
@@ -28,6 +30,9 @@ const MenuWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 800px) {
+        display: none;    
+    }
 `
 
 const MenuItem = styled.a`
@@ -36,4 +41,15 @@ const MenuItem = styled.a`
     color: white;
 `
 
-export { NavbarWrapper, Logo, MenuWrapper, MenuItem }
+const HambWrapper = styled.div`
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: none;    
+    @media (max-width: 800px) {
+        display: flex;
+        align-items: center;
+    }
+`
+
+export { NavbarWrapper, Logo, MenuWrapper, MenuItem, HambWrapper}

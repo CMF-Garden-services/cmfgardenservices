@@ -5,6 +5,10 @@ const { navbarheight } = sizes
 
 const Wrapper = styled.div`
     position: relative;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-behaviour: normal;
     z-index: ${(({zIndex}) => zIndex ? 2 : 0)};
     overflow: hidden;
 `

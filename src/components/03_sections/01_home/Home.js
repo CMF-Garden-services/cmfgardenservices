@@ -4,7 +4,7 @@ import { sizes } from "../../01_constants/Sizes";
 import navbar from "../../../assets/02_home/navbar.jpg"
 
 const Home = () => {
-    const [zIndex, setZIndex] = useState(0)
+    const [zIndex, setZIndex] = useState(1)
     const ref = useRef(null)
     const wrapperRef = useRef()
 

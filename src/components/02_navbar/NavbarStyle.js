@@ -12,7 +12,7 @@ const NavbarWrapper = styled.div`
     -webkit-backface-visibility: hidden;
     color: white;
     font-size: 2rem;
-    z-index: 6;
+    z-index: 3;
 `
 
 

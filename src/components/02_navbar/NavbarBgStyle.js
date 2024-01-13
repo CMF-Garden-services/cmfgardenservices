@@ -9,7 +9,7 @@ const NavbarBgWrapper = styled.div`
     height: ${navbarheight};
     background-color: green;
     opacity: 0.9;
-    z-index: 3;
+    z-index: 1;
 `
 
 export { NavbarBgWrapper }

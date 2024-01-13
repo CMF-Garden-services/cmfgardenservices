@@ -1,5 +1,4 @@
 import { NavbarWrapper } from "./NavbarStyle";
-import CMF from "../../assets/01_navbar/CMF.png";
 
 const Navbar = () => {
     return (

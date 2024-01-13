@@ -13,9 +13,8 @@ const MainImage = styled.img`
     object-fit: cover;
     width: 100vw;
     height: 100vh;
-    // max-height: 90vh;
     @media (max-width: 500px) {
-        height: 100%;
+        height: 30vh;
     }
 `
 

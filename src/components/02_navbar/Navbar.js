@@ -1,9 +1,10 @@
-import { NavbarWrapper } from "./NavbarStyle";
+import { NavbarWrapper, Logo } from "./NavbarStyle";
+import logo from "../../assets/01_navbar/CMF.png"
 
 const Navbar = () => {
     return (
             <NavbarWrapper>
-                This is navbar
+                <Logo src={logo} />
             </NavbarWrapper>
     )
 }

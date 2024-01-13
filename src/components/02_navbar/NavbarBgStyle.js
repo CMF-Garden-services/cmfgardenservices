@@ -7,7 +7,7 @@ const NavbarBgWrapper = styled.div`
     position: fixed;
     width: 100%;
     height: ${navbarheight};
-    background-color: green;
+    background-color: #172B1C;
     opacity: 0.9;
     z-index: 1;
 `

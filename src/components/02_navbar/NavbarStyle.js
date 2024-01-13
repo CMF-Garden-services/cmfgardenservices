@@ -13,8 +13,13 @@ const NavbarWrapper = styled.div`
     color: white;
     font-size: 2rem;
     z-index: 3;
+    display: flex;
+    align-items: center;
+`
+
+const Logo = styled.img`
+    height: calc(${navbarheight} - 30px);
 `
 
 
-
-export { NavbarWrapper }
+export { NavbarWrapper, Logo }

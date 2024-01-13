@@ -4,7 +4,7 @@ import Home from './components/03_sections/01_home/Home';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
           <Navbar />
           <NavbarBg />
           <Home />

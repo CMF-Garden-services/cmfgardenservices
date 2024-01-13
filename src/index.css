@@ -43,6 +43,20 @@ table {
 	border-spacing: 0;
 } */
 
-body {
+html, body {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overscroll-behavior: none;
+	/* overflow: hidden; */
+	/* overscroll-behavior-block: contain; */
+	/* height: 100%;
+	position: fixed; */
+	/* prevent overscroll bounce*/
+	/* overflow-y: scroll;
+	-webkit-overflow-scrolling: touch; */
+	/* iOS velocity scrolling */
 }
+
+
+

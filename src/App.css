@@ -3,4 +3,6 @@
 *, html, body, .app {
     font-family: Montserrat;
     /* font-family: Rhodium Libre; */
+    overscroll-behavior: none;
 }
+

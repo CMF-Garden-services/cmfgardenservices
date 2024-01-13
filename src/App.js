@@ -7,7 +7,7 @@ import Services from './components/03_sections/03_services/Services';
 
 function App() {
   return (
-    <div className="app">
+    <div>
           <Navbar />
           <NavbarBg />
           <Home />

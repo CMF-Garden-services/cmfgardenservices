@@ -21,7 +21,10 @@ const NavbarWrapper = styled.div`
 `
 
 const Logo = styled.img`
-    height: calc(${navbarheight});
+    height: ${navbarheight};
+    @media (max-width: 800px) {
+        height: calc(${navbarheight} - 25px);
+    }
 `
 
 const MenuWrapper = styled.div`

@@ -11,7 +11,6 @@ const NavbarWrapper = styled.div`
     height: ${navbarheight};
     color: white;
     font-size: 2rem;
-    background-color: brown;
     z-index: 3;
 `
 

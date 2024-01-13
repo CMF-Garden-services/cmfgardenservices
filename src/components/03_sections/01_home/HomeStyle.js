@@ -6,15 +6,14 @@ const { navbarheight } = sizes
 const Wrapper = styled.div`
     position: relative;
     z-index: ${(({zIndex}) => zIndex ? 2 : 0)};
-    // z-index: 3;
     overflow: hidden;
 `
 
 const MainImage = styled.img`
     object-fit: cover;
     width: 100vw;
-    height: 100%;
-    // max-height: 100vh;
+    height: 100vh;
+    // max-height: 90vh;
     @media (max-width: 500px) {
         height: 100%;
     }

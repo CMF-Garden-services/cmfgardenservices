@@ -48,6 +48,7 @@ html, body {
 	padding: 0;
 	box-sizing: border-box;
 	overscroll-behavior: none;
+	font-family: Montserrat;
 	/* overflow: hidden; */
 	/* overscroll-behavior-block: contain; */
 	/* height: 100%;

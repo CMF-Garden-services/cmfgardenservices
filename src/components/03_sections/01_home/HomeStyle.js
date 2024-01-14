@@ -49,7 +49,7 @@ const MottoWrapper = styled.div`
         height: 45%;
     }
     @media (max-width: 500px) {
-        height: 55%;
+        height: 65%;
     }
 `
 
@@ -68,7 +68,7 @@ const MottoText = styled.div`
         font-size: 3.5vw;
     }
     @media (max-width: 500px) {
-        font-size: 0.8rem;
+        font-size: 0.95rem;
     }
 `
 
@@ -89,9 +89,9 @@ const Button = styled.button`
         border-radius: 10px;
     }
     @media (max-width: 500px) {
-        font-size: 0.4rem;
-        width: 80px;
-        height: 25px;
+        font-size: 0.6rem;
+        width: 110px;
+        height: 30px;
         border-radius: 5px;
     }
     &:hover {

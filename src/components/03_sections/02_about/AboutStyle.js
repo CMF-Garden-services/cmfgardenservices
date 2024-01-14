@@ -15,7 +15,11 @@ const TextImageWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 100px;
+    @media(max-width: 1500px) {
+        align-items: start;
+    }
     @media(max-width: 1100px) {
+        align-items: center;
         flex-direction: column;
         flex-direction: column-reverse;
         gap: ${wrappermargintoptablet};
@@ -43,8 +47,12 @@ const Image = styled.img`
         width: 350px;
         height: 350px;
     }
-    @media (max-width: 800px) {
-        width: 60vw;
+    @media (max-width: 1100px) {
+        width: 45vw;
+        height: 40vw;
+    }
+    @media (max-width: 500px) {
+        width: 65vw;
         height: 60vw;
     }
 `

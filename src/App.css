@@ -4,5 +4,6 @@
     font-family: Montserrat;
     /* font-family: Rhodium Libre; */
     overscroll-behavior: none;
+    box-sizing: border-box;
 }
 

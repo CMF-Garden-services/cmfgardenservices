@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Wrapper, MainImage, Test } from "./HomeStyle";
+import { Wrapper, MainImage, MottoWrapper, MottoText, Button } from "./HomeStyle";
 import { sizes } from "../../01_constants/Sizes";
 import navbar from "../../../assets/02_home/navbar.jpg"
 
@@ -30,6 +30,10 @@ const Home = () => {
     return (
         <Wrapper ref={ref} zIndex={zIndex}>
             <MainImage src={navbar} alt="navbar" />
+            <MottoWrapper>
+                <MottoText>Providing a reliable and<br/> friendly gardening service<br/> to the local community</MottoText>
+                <Button>REQUEST A QUOTE</Button>
+            </MottoWrapper>
         </Wrapper>
     )
 }

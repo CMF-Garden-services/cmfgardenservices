@@ -15,9 +15,9 @@ const TextImageWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 100px;
-    @media(max-width: 800px) {
-        flex-direction: column;
+    @media(max-width: 1100px) {
         flex-direction: column-reverse;
+        flex-direction: column;
         gap: ${wrappermargintoptablet};
 }
 `

@@ -8,7 +8,7 @@ const GeneralWrapper = styled.div`
     left: 50%;
     transform: translate(-50%);
     width: ${wrapperwidth};
-    margin-top: ${wrappermargintop};
+    padding-top: ${wrappermargintop};
     font-family: "Josefin Sans", sans-serif;
     font-family: Rhodium Libre;
     @media (max-width: 1100px) {
@@ -23,6 +23,12 @@ const GeneralTitle = styled.div`
     font-family: "Rhodium Libre";
     font-size: 3rem;
     margin-bottom: calc(${wrappermargintop} / 2);
+    @media (max-width: 1100px) {
+        margin-bottom: calc(${wrappermargintoptablet} / 2);
+    }
+    @media (max-width: 800px) {
+        font-size: 1.8rem;
+    }
 `
 
 export { GeneralWrapper, GeneralTitle }

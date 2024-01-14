@@ -15,8 +15,8 @@ const clickHamb = () => {
             <NavbarWrapper>
                 <Logo src={logo} />
                 <MenuWrapper>
-                    <MenuItem href="#">Home</MenuItem>
-                    <MenuItem href="#">About</MenuItem>
+                    <MenuItem href="#home">Home</MenuItem>
+                    <MenuItem href="#about">About</MenuItem>
                     <MenuItem href="#">Services</MenuItem>
                     <MenuItem href="#">Locations</MenuItem>
                     <MenuItem href="#">Contacts</MenuItem>

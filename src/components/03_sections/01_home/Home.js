@@ -28,7 +28,7 @@ const Home = () => {
     }, [])
 
     return (
-        <Wrapper ref={ref} zIndex={zIndex}>
+        <Wrapper ref={ref} zIndex={zIndex} id="home">
             <MainImage src={navbar} alt="navbar" />
             <MottoWrapper>
                 <MottoText>Providing a reliable and friendly<br/> gardening service<br/> to the local community</MottoText>

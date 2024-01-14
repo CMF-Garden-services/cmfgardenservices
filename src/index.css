@@ -54,6 +54,7 @@ html, body {
 	::-webkit-scrollbar {
 		display: none;
 	}
+	scroll-behavior: smooth;
 	/* overflow: hidden; */
 	/* overscroll-behavior-block: contain; */
 	/* height: 100%;

@@ -3,7 +3,7 @@ import about from "../../../assets/03_about/about.jpg"
 
 const About = () => {
     return (
-        <Wrapper>
+        <Wrapper id="about">
             <Title>About CMF</Title>
             <TextImageWrapper>
                 <AboutText>

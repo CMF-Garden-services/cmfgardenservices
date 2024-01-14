@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { sizes } from "../../01_constants/Sizes"
 import { colors } from "../../01_constants/Colors"
 
-const { wrapperwidth } = sizes
+const { wrapperwidth, wrapperwidthtablet } = sizes
 const { darkgreen } = colors
 
 const Wrapper = styled.div`
@@ -43,6 +43,7 @@ const MottoWrapper = styled.div`
     align-items: flex-end;
     @media (max-width: 1100px) {
         height: 70%;
+        right: calc((100vw - ${wrapperwidthtablet}) / 2);
     }
     @media (max-width: 500px) {
         height: 70%;

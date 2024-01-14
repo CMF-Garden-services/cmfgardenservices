@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { sizes } from "../01_constants/Sizes"
 
-const { navbarheight, wrapperwidth } = sizes
+const { navbarheight, wrapperwidth, wrapperwidthtablet } = sizes
 
 const NavbarWrapper = styled.div`
     position: fixed;
@@ -16,7 +16,7 @@ const NavbarWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     @media (max-width: 1100px) {
-        width: 90%;
+        width: ${wrapperwidthtablet};
     }
 `
 

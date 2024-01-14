@@ -68,8 +68,9 @@ const MottoText = styled.div`
         font-weight: 300;
     }
     @media (max-width: 500px) {
-        font-size: 1.20rem;
-        text-shadow: 4px 4px 3px black;
+        font-size: 1.10rem;
+        font-weight: 400;
+        // text-shadow: 4px 4px 3px black;
     }
 `
 

@@ -17,7 +17,7 @@ const clickHamb = () => {
                 <MenuWrapper>
                     <MenuItem href="#home">Home</MenuItem>
                     <MenuItem href="#about">About</MenuItem>
-                    <MenuItem href="#">Services</MenuItem>
+                    <MenuItem href="#locations">Services</MenuItem>
                     <MenuItem href="#">Locations</MenuItem>
                     <MenuItem href="#">Contacts</MenuItem>
                 </MenuWrapper>

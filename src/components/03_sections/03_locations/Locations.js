@@ -1,15 +1,31 @@
-import { Wrapper, Title, ImagesWrapper, Image } from "./LocationsStyle";
+import { Wrapper, Title, ImagesWrapper, ImageWrapper, ImageCaption, Image } from "./LocationsStyle";
 import dorridge from "../../../assets/04_locations/dorridge.jpg"
 import earlswood from "../../../assets/04_locations/earlswood.jpg"
+import henley from "../../../assets/04_locations/henley.jpg"
+import lapworth from "../../../assets/04_locations/lapworth.jpg"
 
 
 const Locations = () => {
     return (
-        <Wrapper>
+        <Wrapper id="locations">
             <Title>Locations We Cover</Title>
             <ImagesWrapper>
-                <Image src={dorridge} />
-                <Image src={earlswood} />
+                <ImageWrapper>
+                    <Image src={dorridge} />
+                    <ImageCaption>Dorridge</ImageCaption>
+                </ImageWrapper>
+                <ImageWrapper>
+                    <Image src={earlswood} />
+                    <ImageCaption>Earlswood</ImageCaption>
+                </ImageWrapper>
+                <ImageWrapper>
+                    <Image src={henley} />
+                    <ImageCaption>Henley-in-Arden</ImageCaption>
+                </ImageWrapper>
+                <ImageWrapper>
+                    <Image src={lapworth} />
+                    <ImageCaption>Lapworth</ImageCaption>
+                </ImageWrapper>
             </ImagesWrapper>
         </Wrapper>
     )

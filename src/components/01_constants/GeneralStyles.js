@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { sizes } from "./Sizes";
+import { colors } from "./Colors";
 
 const{ wrapperwidth, wrappermargintop, wrappermargintoptablet, wrapperwidthtablet } = sizes
+const { darkgreen } = colors
 
 const GeneralWrapper = styled.div`
     position: relative;
@@ -23,6 +25,7 @@ const GeneralTitle = styled.div`
     font-family: "Rhodium Libre";
     font-size: 3rem;
     line-height: 1.2;
+    color: ${darkgreen};
     margin-bottom: calc(${wrappermargintop} / 2);
     @media (max-width: 1100px) {
         margin-bottom: calc(${wrappermargintoptablet} / 2);

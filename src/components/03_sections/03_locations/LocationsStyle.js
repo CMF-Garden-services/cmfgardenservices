@@ -36,6 +36,9 @@ const ImageCaption = styled.div`
     bottom: 10px;
     right: 10px;
     color: white;
+    @media(max-width: 1100px) {
+        font-size: 3.5vw;
+    }
 `
 
 const Image = styled.img`

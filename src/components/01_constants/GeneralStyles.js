@@ -13,7 +13,7 @@ const GeneralWrapper = styled.div`
     font-family: Rhodium Libre;
     @media (max-width: 1100px) {
         width: ${wrapperwidthtablet};
-        margin-top: ${wrappermargintoptablet};
+        padding-top: ${wrappermargintoptablet};
     }
 `
 

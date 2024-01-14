@@ -17,9 +17,9 @@ const clickHamb = () => {
                 <MenuWrapper>
                     <MenuItem href="#home">Home</MenuItem>
                     <MenuItem href="#about">About</MenuItem>
-                    <MenuItem href="#locations">Services</MenuItem>
-                    <MenuItem href="#">Locations</MenuItem>
-                    <MenuItem href="#">Contacts</MenuItem>
+                    <MenuItem href="#locations">Locations</MenuItem>
+                    <MenuItem href="#services">Services</MenuItem>
+                    <MenuItem href="#footer">Contacts</MenuItem>
                 </MenuWrapper>
                 {clicked && <HambWrapper onClick={clickHamb}>
                     <GiHamburgerMenu />

@@ -10,7 +10,7 @@ import wildlife from "../../../assets/05_services/wildlife.png"
 
 const Services = () => {
     return (
-        <Wrapper>
+        <Wrapper id="services">
                 <Title>Our Services</Title>
             <GreenBackground>
                 <ServicesWrapper>

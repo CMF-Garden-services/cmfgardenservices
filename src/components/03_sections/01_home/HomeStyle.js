@@ -8,28 +8,24 @@ const { darkgreen } = colors
 const Wrapper = styled.div`
     position: relative;
     width: 100vw;
-    height: 98vh;
-    transition-property: opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transition-behaviour: normal;
+    max-height: 100vh;
     z-index: ${(({zIndex}) => zIndex ? 2 : 0)};
     overflow: hidden;
-    @media (max-width: 1100px) {
-        height: 70vh;
-    }
-    @media (max-width: 800px) {
-        height: 50vh;
-    }
-    @media (max-width: 500px) {
-        height: 30vh;
-    }
+    // @media (max-width: 1100px) {
+    //     height: 70vh;
+    // }
+    // @media (max-width: 800px) {
+    //     height: 50vh;
+    // }
+    // @media (max-width: 500px) {
+    //     height: 30vh;
+    // }
 `
 
 const MainImage = styled.img`
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    // height: 100%;
 `
 
 const MottoWrapper = styled.div`
@@ -46,7 +42,7 @@ const MottoWrapper = styled.div`
     justify-content: space-evenly;
     align-items: flex-end;
     @media (max-width: 1100px) {
-        height: 45%;
+        height: 70%;
     }
     @media (max-width: 500px) {
         height: 70%;
@@ -65,7 +61,7 @@ const MottoText = styled.div`
     font-size: 4vw;
     text-shadow: black 2px 2px;
     @media (max-width: 1100px) {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
     @media (max-width: 500px) {
         font-size: 1.05rem;

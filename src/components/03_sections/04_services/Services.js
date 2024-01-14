@@ -1,11 +1,63 @@
-import { Wrapper, Lorem } from "./ServicesStyle";
+import { Wrapper, GreenBackground, Title, ServicesWrapper, ServiceWrapper, IconWrapper, Icon, IconCaption, IconDescription } from "./ServicesStyle";
+import mowing from "../../../assets/05_services/mowing.png"
+import garden from "../../../assets/05_services/garden_maintenance.png"
+import pruning from "../../../assets/05_services/pruning.png"
+import hedge from "../../../assets/05_services/hedge_cutting.png"
+import leaves from "../../../assets/05_services/leaves_tidy.png"
+import wildlife from "../../../assets/05_services/wildlife.png"
+
+
 
 const Services = () => {
     return (
         <Wrapper>
-            <Lorem id="services">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad earum a impedit eligendi nostrum minima deleniti minus quas blanditiis incidunt, soluta amet adipisci illo. Illo veritatis doloremque modi incidunt, tempore voluptate iste, minus sed earum accusantium ea sequi, voluptates provident totam quaerat suscipit. Illo iste vero harum nihil quasi voluptatibus ducimus. Odit ullam qui, quasi velit saepe ipsa eum fugiat culpa! Quibusdam modi placeat doloremque a aspernatur, accusantium neque consectetur rerum hic laboriosam officia perferendis dolore sequi ipsa maiores eum natus eos. Incidunt cupiditate odio tenetur accusamus nemo commodi sint voluptatum delectus quod consectetur? Quam quaerat magnam fuga ipsam provident?
-            </Lorem>
+                <Title>Our Services</Title>
+            <GreenBackground>
+                <ServicesWrapper>
+                    <ServiceWrapper>
+                        <IconWrapper>
+                            <Icon src={mowing} />
+                        </IconWrapper>
+                        <IconCaption>LAWN MOWING</IconCaption>
+                        <IconDescription>Some little description of this option to explain what this service is</IconDescription>
+                    </ServiceWrapper>
+                    <ServiceWrapper>
+                        <IconWrapper>
+                            <Icon src={garden} />
+                        </IconWrapper>
+                        <IconCaption>GARDEN MAINTENANCE</IconCaption>
+                        <IconDescription>Some little description of this option to explain what this service is</IconDescription>
+                    </ServiceWrapper>
+                    <ServiceWrapper>
+                        <IconWrapper>
+                            <Icon src={pruning} />
+                        </IconWrapper>
+                        <IconCaption>PRUNING</IconCaption>
+                        <IconDescription>Some little description of this option to explain what this service is</IconDescription>
+                    </ServiceWrapper>
+                    <ServiceWrapper>
+                        <IconWrapper>
+                            <Icon src={hedge} />
+                        </IconWrapper>
+                        <IconCaption>HEDGE CUTTING</IconCaption>
+                        <IconDescription>Some little description of this option to explain what this service is</IconDescription>
+                    </ServiceWrapper>
+                    <ServiceWrapper>
+                        <IconWrapper>
+                            <Icon src={leaves} />
+                        </IconWrapper>
+                        <IconCaption>LEAVES TIDY UP</IconCaption>
+                        <IconDescription>Some little description of this option to explain what this service is</IconDescription>
+                    </ServiceWrapper>
+                    <ServiceWrapper>
+                        <IconWrapper>
+                            <Icon src={wildlife} />
+                        </IconWrapper>
+                        <IconCaption>WILDLIFE AREAS</IconCaption>
+                        <IconDescription>Some little description of this option to explain what this service is</IconDescription>
+                    </ServiceWrapper>
+                </ServicesWrapper>
+            </GreenBackground>
         </Wrapper>
     )
 }

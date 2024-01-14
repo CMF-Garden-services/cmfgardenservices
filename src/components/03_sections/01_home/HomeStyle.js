@@ -35,34 +35,37 @@ const MottoWrapper = styled.div`
     // left: 50%;
     // transform: translate(-50%);
     // width: ${wrapperwidth};
-    height: 65%;
+    height: 70%;
     // background-color: brown;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
     @media (max-width: 1100px) {
-        height: 70%;
+        height: 60%;
         right: calc((100vw - ${wrapperwidthtablet}) / 2);
-    }
-    @media (max-width: 500px) {
-        height: 70%;
     }
 `
 
 const MottoText = styled.div`
     // width: 70%;
     height: 50%;
-    line-height: 1.4;
+    line-height: 1.2;
     color: white;
     // background-color: gray;
     text-align: right;
     font-family: Montserrat;
-    font-style: italic;
-    font-size: 4vw;
-    text-shadow: black 2px 2px;
+    font-family: Rhodium Libre;
+    font-family: Roboto;
+    font-family: "Libre Franklin", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    // font-style: italic;
+    font-weight: 200;
+    font-size: 4.5vw;
+    text-shadow: 1px 1px 5px black;
     @media (max-width: 1100px) {
         font-size: 4.5vw;
+        font-weight: 300;
     }
     @media (max-width: 500px) {
         font-size: 1.05rem;
@@ -76,7 +79,8 @@ const Button = styled.button`
     border-radius: 12px;
     border: none;
     color: white;
-    font-weight: bold;
+    // font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 1rem;
     box-shadow: black 0 0 20px;
     @media (max-width: 800px) {

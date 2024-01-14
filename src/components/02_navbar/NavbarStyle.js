@@ -41,6 +41,7 @@ const MenuWrapper = styled.div`
 const MenuItem = styled.a`
     text-decoration: none;
     text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
     color: white;
 `
 

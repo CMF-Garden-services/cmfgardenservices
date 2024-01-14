@@ -31,7 +31,7 @@ const Home = () => {
         <Wrapper ref={ref} zIndex={zIndex}>
             <MainImage src={navbar} alt="navbar" />
             <MottoWrapper>
-                <MottoText>Providing a reliable and<br/> friendly gardening service<br/> to the local community</MottoText>
+                <MottoText>Providing a reliable and friendly<br/> gardening service<br/> to the local community</MottoText>
                 <Button>REQUEST A QUOTE</Button>
             </MottoWrapper>
         </Wrapper>

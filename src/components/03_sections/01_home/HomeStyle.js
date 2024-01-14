@@ -35,14 +35,13 @@ const MottoWrapper = styled.div`
     // left: 50%;
     // transform: translate(-50%);
     // width: ${wrapperwidth};
-    height: 70%;
+    height: 60%;
     // background-color: brown;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
     @media (max-width: 1100px) {
-        height: 60%;
         right: calc((100vw - ${wrapperwidthtablet}) / 2);
     }
 `
@@ -50,7 +49,7 @@ const MottoWrapper = styled.div`
 const MottoText = styled.div`
     // width: 70%;
     height: 50%;
-    line-height: 1.2;
+    line-height: 1;
     color: white;
     // background-color: gray;
     text-align: right;
@@ -60,15 +59,17 @@ const MottoText = styled.div`
     font-family: "Libre Franklin", sans-serif;
     font-family: "Josefin Sans", sans-serif;
     // font-style: italic;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 4.5vw;
-    text-shadow: 1px 1px 5px black;
+    // text-transform: uppercase;
+    text-shadow: 4px 4px 4px black;
     @media (max-width: 1100px) {
         font-size: 4.5vw;
         font-weight: 300;
     }
     @media (max-width: 500px) {
-        font-size: 1.05rem;
+        font-size: 1.20rem;
+        text-shadow: 4px 4px 3px black;
     }
 `
 

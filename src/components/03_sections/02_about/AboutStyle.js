@@ -53,7 +53,7 @@ const Image = styled.img`
     }
     @media (max-width: 500px) {
         width: 65vw;
-        height: 60vw;
+        height: 55vw;
     }
 `
 

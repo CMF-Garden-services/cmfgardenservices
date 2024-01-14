@@ -16,8 +16,8 @@ const TextImageWrapper = styled.div`
     align-items: center;
     gap: 100px;
     @media(max-width: 1100px) {
-        flex-direction: column-reverse;
         flex-direction: column;
+        flex-direction: column-reverse;
         gap: ${wrappermargintoptablet};
 }
 `
@@ -25,11 +25,12 @@ const TextImageWrapper = styled.div`
 const AboutText = styled.div`
     // font-family: "Josefin Sans", sans-serif;
     font-size: 1.8rem;
+    text-align: justify;
     @media(max-width: 1500px) {
         font-size: 1.6rem;
     }
     @media(max-width: 800px) {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 `
 

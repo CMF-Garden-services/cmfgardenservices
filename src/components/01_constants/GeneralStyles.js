@@ -22,12 +22,13 @@ const GeneralTitle = styled.div`
     text-align: center;
     font-family: "Rhodium Libre";
     font-size: 3rem;
+    line-height: 1.2;
     margin-bottom: calc(${wrappermargintop} / 2);
     @media (max-width: 1100px) {
         margin-bottom: calc(${wrappermargintoptablet} / 2);
     }
     @media (max-width: 800px) {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 `
 

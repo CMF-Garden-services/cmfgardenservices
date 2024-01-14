@@ -4,7 +4,7 @@ import about from "../../../assets/03_about/about.jpg"
 const About = () => {
     return (
         <Wrapper id="about">
-            <Title>About CMF</Title>
+            <Title>About CMF Garden Services</Title>
             <TextImageWrapper>
                 <AboutText>
                     Hello, my name is Chris. I spent 8 years working for one of the country’s leading lawn care companies

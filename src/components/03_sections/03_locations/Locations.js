@@ -3,6 +3,7 @@ import dorridge from "../../../assets/04_locations/dorridge.jpg"
 import earlswood from "../../../assets/04_locations/earlswood.jpg"
 import henley from "../../../assets/04_locations/henley.jpg"
 import lapworth from "../../../assets/04_locations/lapworth.jpg"
+import solihull from "../../../assets/04_locations/solihull.jpg"
 
 
 const Locations = () => {
@@ -25,6 +26,10 @@ const Locations = () => {
                 <ImageWrapper>
                     <Image src={lapworth} />
                     <ImageCaption>Lapworth</ImageCaption>
+                </ImageWrapper>
+                <ImageWrapper>
+                    <Image src={solihull} />
+                    <ImageCaption>Solihull</ImageCaption>
                 </ImageWrapper>
             </ImagesWrapper>
         </Wrapper>

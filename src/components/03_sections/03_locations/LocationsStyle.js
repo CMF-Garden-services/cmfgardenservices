@@ -22,7 +22,7 @@ const ImagesWrapper = styled.div`
     gap: 3px;
     @media (max-width: 1100px) {
         max-width: ${wrapperwidthtablet};
-        height: 30vw;
+        height: 40vw;
     }
 `
 

@@ -18,15 +18,23 @@ const Title = styled(GeneralTitle)`
 
 `
 const ServicesWrapper = styled.div`
-    height: 600px;
-    padding: 50px;
+    padding: 2vw;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 120px;
+    gap: 5vw;
+    @media(max-width: 900px) {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 600px) {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 const ServiceWrapper = styled.div`
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;

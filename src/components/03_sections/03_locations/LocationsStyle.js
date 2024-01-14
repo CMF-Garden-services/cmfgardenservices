@@ -1,15 +1,15 @@
 import styled from "styled-components"
+import { GeneralWrapper } from "../../01_constants/GeneralStyles"
 import { sizes } from "../../01_constants/Sizes"
 
 const { navbarheight } = sizes
 
-const Wrapper = styled.div`
-    position: sticky;
-    top: 0;
+const Wrapper = styled(GeneralWrapper)`
+
 `
 
 const AboutText = styled.div`
-    width: 50vw;
+    width: 80vw;
     height: 200vh;
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;

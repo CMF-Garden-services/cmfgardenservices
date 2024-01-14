@@ -3,4 +3,5 @@ export const sizes = {
     wrapperwidth: "70vw",
     wrapperwidthtablet: "90%",
     wrappermargintop: "10vh",
+    wrappermargintoptablet: "5vh",
 }

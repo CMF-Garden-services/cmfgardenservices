@@ -11,7 +11,7 @@ function App() {
           <NavbarBg />
           <Home />
           <About />
-          {/* <Locations /> */}
+          <Locations />
     </div>
   );
 }

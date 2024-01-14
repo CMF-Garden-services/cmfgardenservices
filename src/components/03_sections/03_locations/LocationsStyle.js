@@ -1,28 +1,26 @@
 import styled from "styled-components"
-import { GeneralWrapper } from "../../01_constants/GeneralStyles"
+import { GeneralWrapper, GeneralTitle } from "../../01_constants/GeneralStyles"
 import { sizes } from "../../01_constants/Sizes"
 
 const { navbarheight } = sizes
 
 const Wrapper = styled(GeneralWrapper)`
-
 `
 
-const AboutText = styled.div`
-    width: 80vw;
-    height: 200vh;
-    background-color: rgba(0, 0, 0, 0.05);
-    margin: 0 auto;
+const Title = styled(GeneralTitle)`
+`
+
+const ImagesWrapper = styled.div`
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
 `
 
 const Image = styled.img`
-    width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
-    @media (max-width: 700px) {
-        height: 150px;
-
-    }
 `
 
-export {Wrapper, AboutText, Image}
+export {Wrapper, Title, ImagesWrapper, Image}

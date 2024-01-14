@@ -43,8 +43,8 @@ const Image = styled.img`
         height: 350px;
     }
     @media (max-width: 800px) {
-        width: 50vw;
-        height: 50vw;
+        width: 60vw;
+        height: 60vw;
     }
 `
 

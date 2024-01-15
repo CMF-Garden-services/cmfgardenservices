@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Wrapper, MainImage, MottoWrapper, MottoText, Button } from "./HomeStyle";
+import { Wrapper, MainImage, MottoWrapper, MottoText, Button, HashtagAbout } from "./HomeStyle";
 import { sizes } from "../../01_constants/Sizes";
 import navbar from "../../../assets/02_home/navbar.jpg"
 
@@ -34,6 +34,7 @@ const Home = () => {
                 <MottoText>Providing a reliable and friendly<br/> gardening service<br/> to the local community</MottoText>
                 <Button>REQUEST A QUOTE</Button>
             </MottoWrapper>
+            {/* <HashtagAbout id="about"></HashtagAbout> */}
         </Wrapper>
     )
 }

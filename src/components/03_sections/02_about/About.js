@@ -1,9 +1,10 @@
-import { Wrapper, Title, TextImageWrapper, AboutText, Image } from "./AboutStyle";
+import { Wrapper, HashtagAbout, Title, TextImageWrapper, AboutText, Image } from "./AboutStyle";
 import about from "../../../assets/03_about/about.jpg"
 
 const About = () => {
     return (
-        <Wrapper id="about">
+        <Wrapper>
+            <HashtagAbout id="about"></HashtagAbout>
             <Title>About CMF Garden Services</Title>
             <TextImageWrapper>
                 <AboutText>

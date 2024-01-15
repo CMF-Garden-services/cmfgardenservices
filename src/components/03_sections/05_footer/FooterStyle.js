@@ -3,11 +3,19 @@ import { GeneralWrapper, GeneralTitle } from "../../01_constants/GeneralStyles"
 import { sizes } from "../../01_constants/Sizes"
 import { colors } from "../../01_constants/Colors"
 
-const { wrapperwidth, wrapperwidthtablet } = sizes
+const { wrapperwidth, wrapperwidthtablet, wrappermargintoptablet } = sizes
 const { darkgreen } = colors
 
 const Wrapper = styled(GeneralWrapper)`
 
+`
+
+const HashtagFooter = styled.div`
+    position: absolute;
+    top: 0px;
+    @media (max-width: 1100px) {
+        top: -${wrappermargintoptablet};
+    }
 `
 
 const Title = styled(GeneralTitle)`
@@ -25,4 +33,4 @@ const ImagesWrapper = styled.div`
 `
 
 
-export {Wrapper, Title, ImagesWrapper }
+export {Wrapper, HashtagFooter, Title, ImagesWrapper }

@@ -1,4 +1,4 @@
-import { Wrapper, Title, ImagesWrapper, ImageWrapper, ImageCaption, Image } from "./LocationsStyle";
+import { Wrapper, HashtagLocations, Title, ImagesWrapper, ImageWrapper, ImageCaption, Image } from "./LocationsStyle";
 import dorridge from "../../../assets/04_locations/dorridge.jpg"
 import earlswood from "../../../assets/04_locations/earlswood.jpg"
 import henley from "../../../assets/04_locations/henley.jpg"
@@ -8,7 +8,8 @@ import solihull from "../../../assets/04_locations/solihull.jpg"
 
 const Locations = () => {
     return (
-        <Wrapper id="locations">
+        <Wrapper>
+            <HashtagLocations id="locations"/>
             <Title>Locations We Cover</Title>
             <ImagesWrapper>
                 <ImageWrapper>

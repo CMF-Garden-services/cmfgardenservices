@@ -1,12 +1,22 @@
 import styled from "styled-components";
 import { GeneralWrapper, GeneralTitle } from "../../01_constants/GeneralStyles";
 import { colors } from "../../01_constants/Colors";
+import { sizes } from "../../01_constants/Sizes";
 
 const { circlegreen, backgroundgreen } = colors
+const { wrappermargintoptablet } = sizes
 
 const Wrapper = styled(GeneralWrapper)`
 
 `
+const HashtagServices = styled.div`
+    position: absolute;
+    top: 0px;
+    @media (max-width: 1100px) {
+        top: -${wrappermargintoptablet};
+    }
+`
+
 
 const GreenBackground = styled.div`
     width: 100%;
@@ -67,4 +77,4 @@ const IconDescription = styled.div`
 
 
 
-export { Wrapper, GreenBackground, Title, ServicesWrapper, ServiceWrapper, IconWrapper, Icon, IconCaption, IconDescription }
+export { Wrapper, HashtagServices, GreenBackground, Title, ServicesWrapper, ServiceWrapper, IconWrapper, Icon, IconCaption, IconDescription }

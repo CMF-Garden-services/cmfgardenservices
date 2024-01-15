@@ -7,6 +7,14 @@ const { wrappermargintoptablet } = sizes
 const Wrapper = styled(GeneralWrapper)`
 `
 
+const HashtagAbout = styled.div`
+    position: absolute;
+    top: 0px;
+    @media (max-width: 1100px) {
+        top: -${wrappermargintoptablet};
+    }
+`
+
 const Title = styled(GeneralTitle)`
 `
 
@@ -57,4 +65,4 @@ const Image = styled.img`
     }
 `
 
-export {Wrapper, Title, TextImageWrapper, AboutText, Image}
+export {Wrapper, HashtagAbout, Title, TextImageWrapper, AboutText, Image}

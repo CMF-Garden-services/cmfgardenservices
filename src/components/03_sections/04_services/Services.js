@@ -1,4 +1,4 @@
-import { Wrapper, GreenBackground, Title, ServicesWrapper, ServiceWrapper, IconWrapper, Icon, IconCaption, IconDescription } from "./ServicesStyle";
+import { Wrapper, HashtagServices, GreenBackground, Title, ServicesWrapper, ServiceWrapper, IconWrapper, Icon, IconCaption, IconDescription } from "./ServicesStyle";
 import mowing from "../../../assets/05_services/mowing.png"
 import garden from "../../../assets/05_services/garden_maintenance.png"
 import pruning from "../../../assets/05_services/pruning.png"
@@ -10,8 +10,9 @@ import wildlife from "../../../assets/05_services/wildlife.png"
 
 const Services = () => {
     return (
-        <Wrapper id="services">
-                <Title>Our Services</Title>
+        <Wrapper>
+            <HashtagServices id="services"/>
+            <Title>Our Services</Title>
             <GreenBackground>
                 <ServicesWrapper>
                     <ServiceWrapper>

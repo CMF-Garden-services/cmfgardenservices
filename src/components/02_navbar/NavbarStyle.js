@@ -1,7 +1,9 @@
 import styled from "styled-components"
 import { sizes } from "../01_constants/Sizes"
+import { colors } from "../01_constants/Colors"
 
 const { navbarheight, wrapperwidth, wrapperwidthtablet } = sizes
+const { circlegreen } = colors
 
 const NavbarWrapper = styled.div`
     position: fixed;
@@ -34,7 +36,19 @@ const MenuWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     @media (max-width: 800px) {
-        display: none;    
+        display: ${(({clicked}) => clicked ? "none" : "flex" )};
+        position: absolute;
+        top: ${navbarheight};
+        left: 50%;
+        transform: translate(-50%);
+        height: 180px;
+        opacity: ${(({clicked}) => clicked ? 0 : 1)};
+        // opacity: 1;
+        width: 100vw;
+        padding: 10px;
+        flex-direction: column;
+        background-color: ${circlegreen};
+
     }
 `
 

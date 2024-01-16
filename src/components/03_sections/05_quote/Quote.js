@@ -3,7 +3,7 @@ import { Wrapper, HashTagQuote, Title, Form, Label, LabelStar, Input, TextArea, 
 const Quote = () => {
     return (
         <Wrapper>
-            <HashTagQuote id="quote" />
+            <HashTagQuote id="quote" ></HashTagQuote>
             <Title>
                 Request a Quote
             </Title>

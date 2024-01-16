@@ -9,9 +9,9 @@ const Wrapper = styled(GeneralWrapper)`
 
 const HashTagQuote = styled.div`
     position: absolute;
-    top: 0;
+    top: 0px;
     @media(max-width: 1100px) {
-        top: ${wrappermargintoptablet}
+        top: -${wrappermargintoptablet};
     }
 `
 
@@ -38,7 +38,7 @@ const LabelStar = styled(Label)`
     position: relative;
     top: -3px;
     color: red;
-    font-size: 1rem;   
+    font-size: 1rem;
 }
 
 `

@@ -7,7 +7,7 @@ const { wrapperwidth, wrapperwidthtablet, wrappermargintoptablet } = sizes
 const { darkgreen } = colors
 
 const Wrapper = styled(GeneralWrapper)`
-
+    margin-bottom: 20px;
 `
 
 const HashtagFooter = styled.div`

@@ -9,14 +9,14 @@ const Quote = () => {
             </Title>
             <Form action="https://formsubmit.co/vikhulei@gmail.com" method="POST">
                 <LabelStar htmlFor="name">Name</LabelStar>
-                <Input type="text" id="name" />
+                <Input type="text" id="name" name="name" />
                 <LabelStar htmlFor="phone">Phone Number</LabelStar>
-                <Input type="phone" id="phone" />
+                <Input type="phone" id="phone" name="phone" />
                 <Label htmlFor="email">Email Address</Label>
-                <Input type="email" id="email" className="noStar"/>
+                <Input type="email" id="email" name="email"/>
                 <Label htmlFor="message">Message</Label>
-                <TextArea type="textarea" id="message" />
-            <Button>SUBMIT</Button>
+                <TextArea type="textarea" id="message" name="message" />
+            <Button type="submit">SUBMIT</Button>
             </Form>
         </Wrapper>
     )

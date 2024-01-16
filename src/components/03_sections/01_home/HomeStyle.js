@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { GeneralWrapper, GeneralButton } from "../../01_constants/GeneralStyles"
 import { sizes } from "../../01_constants/Sizes"
 import { colors } from "../../01_constants/Colors"
 
@@ -74,37 +75,7 @@ const MottoText = styled.div`
     }
 `
 
-const Button = styled.button`
-    width: 200px;
-    height: 60px;
-    background-color: ${darkgreen};
-    border-radius: 12px;
-    border: none;
-    color: white;
-    // font-weight: bold;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1rem;
-    box-shadow: black 0 0 20px;
-    @media (max-width: 800px) {
-        font-size: 0.8rem;
-        width: 180px;
-        height: 40px;
-        border-radius: 10px;
-    }
-    @media (max-width: 500px) {
-        font-size: 0.6rem;
-        width: 110px;
-        height: 35px;
-        border-radius: 5px;
-        box-shadow: black 0 0 5px;
-    }
-    &:hover {
-        color: lightgray;
-        cursor: pointer;
-    }
-    &:active {
-        transform: translate(1px, 1px);
-    }
+const Button = styled(GeneralButton)`
 `
 
 const HashtagAbout = styled.div`

@@ -7,8 +7,9 @@ import Services from './components/03_sections/04_services/Services';
 import Quote from './components/03_sections/05_quote/Quote';
 import Footer from './components/03_sections/05_footer/Footer'
 
-function App() {
+const App = () => {
   return (
+    
     <div className='app'>
           <Navbar />
           <NavbarBg />

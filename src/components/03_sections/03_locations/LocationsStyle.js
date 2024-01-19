@@ -24,29 +24,21 @@ const AnimationDesktop = keyframes`
 
 const AnimationMobile = keyframes`
     0% {left: 0px}
-    4% {left: -402px}
+    2% {left: -402px}
     14% {left: -402px}
-    18% {left: -804px}
+    16% {left: -804px}
     28% {left: -804px}
-    32% {left: -1206px}
+    30% {left: -1206px}
     42% {left: -1206px}
-    46% {left: -1608px}
+    44% {left: -1608px}
     57% {left: -1608px}
-    61% {left: -2010px}
+    59% {left: -2010px}
     71% {left: -2010px}
-    75% {left: -2412px}
+    73% {left: -2412px}
     85% {left: -2412px}
-    89% {left: -2814px}
+    87% {left: -2814px}
     100% {left: -2814px}
 `
-
-// const Wrapper = styled(GeneralWrapper)`
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     left: 50%;
-//     transform: translate(50%);
-// `
 
 const Wrapper = styled.div`
     position: relative;
@@ -55,7 +47,6 @@ const Wrapper = styled.div`
     font-family: Rhodium Libre;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     @media (max-width: 1100px) {
         padding-top: ${wrappermargintoptablet};
     }
@@ -72,13 +63,6 @@ const HashtagLocations = styled.div`
 const Title = styled(GeneralTitle)`
 `
 
-// const SlideWindow = styled.div`
-//     position: relative;
-//     width: 100vw;
-//     left: 50%;
-//     transform: translate()
-// `
-
 const ImagesWrapperContainer = styled.div`
     position: relative;
     left: 0;
@@ -93,19 +77,12 @@ const ImagesWrapperContainer = styled.div`
 const ImagesWrapper = styled.div`
     position: absolute;
     left: 0px;
-    // max-width: ${wrapperwidth};
-    // overflow: hidden;
     height: 100%;
-    // width: 100%;
     display: flex;
     gap: 2px;
-    animation-name: ${AnimationDesktop};
-    animation-duration: 18s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: 15s linear infinite ${AnimationDesktop};
     @media (max-width: 800px) {
-        // max-width: ${wrapperwidthtablet};
-        animation-name: ${AnimationMobile};
+        animation: 15s linear infinite ${AnimationMobile};
     }
 `
 
@@ -131,7 +108,6 @@ const Image = styled.img`
     object-fit: cover;
     @media(max-width: 800px) {
         width: 400px;
-        // max-width: 100vw;
     }
 `
 

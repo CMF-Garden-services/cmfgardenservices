@@ -4,6 +4,7 @@ import { colors } from "./Colors";
 
 const{ wrapperwidth, wrappermargintop, wrappermargintoptablet, wrapperwidthtablet } = sizes
 const { darkgreen } = colors
+const marginhashtagmobile = (wrappermargintoptablet - 20)
 
 const GeneralWrapper = styled.div`
     position: relative;
@@ -67,4 +68,12 @@ const GeneralButton = styled.button`
     }
 `
 
-export { GeneralWrapper, GeneralTitle, GeneralButton }
+const Hashtag = styled.div`
+    position: absolute;
+    top: -20px;
+    @media (max-width: 1100px) {
+        top: -${wrappermargintoptablet};
+    }
+`
+
+export { GeneralWrapper, GeneralTitle, GeneralButton, Hashtag }

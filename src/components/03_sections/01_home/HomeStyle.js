@@ -78,14 +78,4 @@ const MottoText = styled.div`
 const Button = styled(GeneralButton)`
 `
 
-const HashtagAbout = styled.div`
-    position: absolute;
-    // bottom: -200px;
-    @media (max-width: 1100px) {
-        bottom: ${wrappermargintoptablet};
-    }
-    // height: 10px;
-    // background-color: brown;
-`
-
-export {Wrapper, MainImage, MottoWrapper, MottoText, Button, HashtagAbout }
+export {Wrapper, MainImage, MottoWrapper, MottoText, Button }

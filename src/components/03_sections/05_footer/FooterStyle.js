@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { GeneralWrapper, GeneralTitle } from "../../01_constants/GeneralStyles"
+import { GeneralWrapper, GeneralTitle, Hashtag } from "../../01_constants/GeneralStyles"
 import { sizes } from "../../01_constants/Sizes"
 import { colors } from "../../01_constants/Colors"
 
@@ -10,12 +10,7 @@ const Wrapper = styled(GeneralWrapper)`
     margin-bottom: 20px;
 `
 
-const HashtagFooter = styled.div`
-    position: absolute;
-    top: 0px;
-    @media (max-width: 1100px) {
-        top: -${wrappermargintoptablet};
-    }
+const HashtagFooter = styled(Hashtag)`
 `
 
 const Title = styled(GeneralTitle)`

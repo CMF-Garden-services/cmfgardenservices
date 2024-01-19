@@ -1,5 +1,5 @@
 import styled, { keyframes, css } from "styled-components"
-import { GeneralWrapper, GeneralTitle } from "../../01_constants/GeneralStyles"
+import { GeneralTitle, Hashtag } from "../../01_constants/GeneralStyles"
 import { sizes } from "../../01_constants/Sizes"
 
 const { wrapperwidth, wrapperwidthtablet, wrappermargintop, wrappermargintoptablet } = sizes
@@ -52,12 +52,7 @@ const Wrapper = styled.div`
     }
 `
 
-const HashtagLocations = styled.div`
-    position: absolute;
-    top: -10px;
-    @media (max-width: 1100px) {
-        top: -${wrappermargintoptablet};
-    }
+const HashtagLocations = styled(Hashtag)`
 `
 
 const Title = styled(GeneralTitle)`

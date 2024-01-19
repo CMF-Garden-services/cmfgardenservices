@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 
 const HashtagLocations = styled.div`
     position: absolute;
-    top: 0px;
+    top: -10px;
     @media (max-width: 1100px) {
         top: -${wrappermargintoptablet};
     }

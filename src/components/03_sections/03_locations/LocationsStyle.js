@@ -92,7 +92,10 @@ const ImagesWrapper = styled.div`
 
 const ImageWrapper = styled.div`
     position: relative;
-    cursor: pointer
+    cursor: pointer;
+    @media(max-width: 800px) {
+        cursor: auto;
+    }
 `
 
 const ImageCaption = styled.div`
@@ -125,7 +128,13 @@ const LargeImageWrapper = styled.div`
     height: 30vw;
     z-index: 99;
     ${(({largeImg}) => largeImg ? ShowLargeImage : "")}
-
+    @media(max-width: 1100px) {
+        width: 70vw;
+        height: 40vw;
+    }
+    @media(max-width: 800px) {
+        display: none;
+    }
 `
 
 const LargeImage = styled.img`
@@ -136,11 +145,12 @@ const LargeImage = styled.img`
 
 const CloseIcon = styled.div`
     position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2rem;
+    top: 5px;
+    right: 5px;
+    font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
+    color: white;
 `
 
 export {Wrapper, HashtagLocations, Title, ImagesWrapperContainer, ImagesWrapper, ImageWrapper, ImageCaption, Image, LargeImageWrapper, LargeImage, CloseIcon}

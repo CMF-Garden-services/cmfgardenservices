@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Wrapper, HashtagLocations, Title, ImagesWrapperContainer, ImagesWrapper, ImageWrapper, ImageCaption, Image, LargeImageWrapper, LargeImage, CloseIcon } from "./LocationsStyle";
 import { Images } from "./Images";
+import { IoClose } from "react-icons/io5";
 
 
 const Locations = () => {
@@ -11,8 +12,6 @@ const Locations = () => {
     const showLargeImage = (e) => {
         setImageId(e.target.id)
         setImageCaption(e.target.name)
-        console.log(e.target.id)
-        console.log(e.target.name)
         setLargeImg(true)
     }
     
@@ -25,7 +24,9 @@ const Locations = () => {
             {largeImg && <LargeImageWrapper largeImg={largeImg}>
                 <LargeImage src={imageId} />
                 <ImageCaption>{imageCaption}</ImageCaption>
-                <CloseIcon onClick={hideLargeImage}>X</CloseIcon>
+                <CloseIcon onClick={hideLargeImage}>
+                <IoClose />
+                </CloseIcon>
             </LargeImageWrapper>}
 
             <HashtagLocations id="locations" />

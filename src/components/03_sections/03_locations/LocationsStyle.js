@@ -4,6 +4,15 @@ import { sizes } from "../../01_constants/Sizes"
 
 const { wrapperwidth, wrapperwidthtablet, wrappermargintop, wrappermargintoptablet } = sizes
 
+const AnimationLargeImage = keyframes`
+    0% {opacity: 0}
+    100% {opacity: 1}
+`
+
+const ShowLargeImage = css`
+    animation: ${AnimationLargeImage} 0.4s;
+`
+
 const AnimationDesktop = keyframes`
     0% {left: 0px}
     2% {left: -502px}
@@ -83,6 +92,7 @@ const ImagesWrapper = styled.div`
 
 const ImageWrapper = styled.div`
     position: relative;
+    cursor: pointer
 `
 
 const ImageCaption = styled.div`
@@ -106,4 +116,31 @@ const Image = styled.img`
     }
 `
 
-export {Wrapper, HashtagLocations, Title, ImagesWrapperContainer, ImagesWrapper, ImageWrapper, ImageCaption, Image}
+const LargeImageWrapper = styled.div`
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 30vw;
+    z-index: 99;
+    ${(({largeimg}) => largeimg ? ShowLargeImage : "")}
+
+`
+
+const LargeImage = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+`
+
+const CloseIcon = styled.div`
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+`
+
+export {Wrapper, HashtagLocations, Title, ImagesWrapperContainer, ImagesWrapper, ImageWrapper, ImageCaption, Image, LargeImageWrapper, LargeImage, CloseIcon}

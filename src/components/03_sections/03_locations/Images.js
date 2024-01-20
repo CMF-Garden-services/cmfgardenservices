@@ -9,7 +9,7 @@ import wooten from "../../../assets/04_locations/wooten.jpg"
 export const Images = [
     {
         ind: 11,
-        image: dorridge,
+        image: henley,
         caption: "Dorridge"
     },
     {

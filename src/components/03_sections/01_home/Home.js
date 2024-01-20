@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Wrapper, MainImage, MottoWrapper, MottoText, Button } from "./HomeStyle";
 import { sizes } from "../../01_constants/Sizes";
-import navbar from "../../../assets/02_home/navbar.jpg"
+import home from "../../../assets/02_home/home.jpg"
+import home_lq from "../../../assets/02_home/home_lq.jpg"
 import { useImageLoader } from "./ImageLoader";
 
 
@@ -30,12 +31,11 @@ const Home = () => {
         }
     }, [])
 
-    const loaded = useImageLoader(navbar)
-    console.log(loaded)
+    const loaded = useImageLoader(home)
 
     return (
         <Wrapper ref={ref} zIndex={zIndex} id="home">
-            {loaded ? <MainImage src={navbar} alt="navbar"/> : <div style={{"width": "100%", "height": "100vw", "background-color": "brown"}}></div> }
+            {loaded ? <MainImage src={home} alt="home"/> : <MainImage src={home_lq} alt="home"/> }
             <MottoWrapper>
                 <MottoText>Providing a reliable and friendly<br/> gardening service<br/> to the local community</MottoText>
                 <a href="#quote"><Button>REQUEST A QUOTE</Button></a>

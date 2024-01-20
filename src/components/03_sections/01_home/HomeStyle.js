@@ -18,6 +18,7 @@ const Wrapper = styled.div`
     height: 60vw;
     max-height: 100vh;
     z-index: ${(({zIndex}) => zIndex ? 2 : 0)};
+    z-index: 0;
     overflow: hidden;
 
 `

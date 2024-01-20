@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Navbar from './components/02_navbar/Navbar';
 import NavbarBg from './components/02_navbar/NavbarBg';
 import Home from './components/03_sections/01_home/Home';
@@ -8,12 +9,14 @@ import Quote from './components/03_sections/05_quote/Quote';
 import Footer from './components/03_sections/05_footer/Footer'
 
 const App = () => {
+  const[solidNavbar, setSolidNavbar] = useState(false)
+  
   return (
     
     <div className='app'>
           <Navbar />
-          <NavbarBg />
-          <Home />
+          <NavbarBg solidNavbar={solidNavbar} />
+          <Home setSolidNavbar={setSolidNavbar} />
           <About />
           <Locations />
           <Services />

@@ -1,8 +1,8 @@
 import { NavbarBgWrapper } from "./NavbarBgStyle";
 
-const NavbarBg = () => {
+const NavbarBg = ({solidNavbar}) => {
     return (
-        <NavbarBgWrapper />
+        <NavbarBgWrapper solidNavbar={solidNavbar} />
     )
 }
 

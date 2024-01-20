@@ -7,7 +7,7 @@ import { useImageLoader } from "./useImageLoader";
 
 
 
-const Home = () => {
+const Home = ({setSolidNavbar}) => {
     const [zIndex, setZIndex] = useState(1)
     const ref = useRef(null)
     const wrapperRef = useRef()
@@ -19,8 +19,10 @@ const Home = () => {
             const showSolid = trigger - windowScroll
             if (showSolid >= 0) {
                 setZIndex(1)
+                setSolidNavbar(false)
             } else {
                 setZIndex(0)
+                setSolidNavbar(true)
             }
         }
         

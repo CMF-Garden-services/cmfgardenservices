@@ -8,7 +8,7 @@ const { darkgreen } = colors
 
 const PlaceHolder = styled.div`
     width: 100%;
-    height: 100vw;
+    height: 60vw;
 `
 
 const Wrapper = styled.div`
@@ -31,7 +31,7 @@ const Wrapper = styled.div`
 const MainImage = styled.img`
     object-fit: cover;
     width: 100%;
-    // height: 100%;
+    height: 60vw;
 `
 
 const MottoWrapper = styled.div`

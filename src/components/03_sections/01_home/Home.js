@@ -36,7 +36,7 @@ const Home = () => {
     return (
         <PlaceHolder>
         {loaded ? <Wrapper ref={ref} zIndex={zIndex} id="home">
-            {loaded ?  <MainImage src={home} alt="home"/>  : <MainImage src={home_lq} alt="home"/> }
+            <MainImage src={home} alt="home"/>
             <MottoWrapper>
                 <MottoText>Providing a reliable and friendly<br/> gardening service<br/> to the local community</MottoText>
                 <a href="#quote"><Button>REQUEST A QUOTE</Button></a>

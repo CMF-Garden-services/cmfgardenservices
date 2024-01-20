@@ -6,7 +6,7 @@ import About from './components/03_sections/02_about/About'
 import Locations from './components/03_sections/03_locations/Locations';
 import Services from './components/03_sections/04_services/Services';
 import Quote from './components/03_sections/05_quote/Quote';
-import Footer from './components/03_sections/05_footer/Footer'
+import Footer from './components/03_sections/06_footer/Footer'
 
 const App = () => {
   const[solidNavbar, setSolidNavbar] = useState(false)

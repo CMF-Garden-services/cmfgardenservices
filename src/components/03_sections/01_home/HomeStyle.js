@@ -9,23 +9,17 @@ const { darkgreen } = colors
 const PlaceHolder = styled.div`
     width: 100%;
     height: 60vw;
+    max-height: 100vh;
 `
 
 const Wrapper = styled.div`
     position: relative;
     width: 100vw;
+    height: 60vw;
     max-height: 100vh;
     z-index: ${(({zIndex}) => zIndex ? 2 : 0)};
     overflow: hidden;
-    // @media (max-width: 1100px) {
-    //     height: 70vh;
-    // }
-    // @media (max-width: 800px) {
-    //     height: 50vh;
-    // }
-    // @media (max-width: 500px) {
-    //     height: 30vh;
-    // }
+
 `
 
 const MainImage = styled.img`

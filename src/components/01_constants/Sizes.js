@@ -4,4 +4,6 @@ export const sizes = {
     wrapperwidthtablet: "90%",
     wrappermargintop: "10vh",
     wrappermargintoptablet: "5vh",
+    hashtagdesktop: "-20px",
+    hashtagmobile: "-40px",
 }

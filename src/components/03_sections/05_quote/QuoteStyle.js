@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { GeneralWrapper, GeneralTitle, GeneralButton } from "../../01_constants/GeneralStyles"
+import { GeneralWrapper, GeneralTitle, GeneralButton, Hashtag } from "../../01_constants/GeneralStyles"
 import { sizes } from "../../01_constants/Sizes"
 
 const { wrappermargintoptablet } = sizes
@@ -7,12 +7,7 @@ const { wrappermargintoptablet } = sizes
 const Wrapper = styled(GeneralWrapper)`
 `
 
-const HashTagQuote = styled.div`
-    position: absolute;
-    top: 0px;
-    @media(max-width: 1100px) {
-        top: -${wrappermargintoptablet};
-    }
+const HashTagQuote = styled(Hashtag)`
 `
 
 const Title = styled(GeneralTitle)`

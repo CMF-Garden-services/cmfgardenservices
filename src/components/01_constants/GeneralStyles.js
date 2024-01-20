@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { sizes } from "./Sizes";
 import { colors } from "./Colors";
 
-const{ wrapperwidth, wrappermargintop, wrappermargintoptablet, wrapperwidthtablet } = sizes
+const{ wrapperwidth, wrappermargintop, wrappermargintoptablet, wrapperwidthtablet, hashtagdesktop, hashtagmobile } = sizes
 const { darkgreen } = colors
 const marginhashtagmobile = (wrappermargintoptablet - 20)
 
@@ -70,9 +70,9 @@ const GeneralButton = styled.button`
 
 const Hashtag = styled.div`
     position: absolute;
-    top: -20px;
-    @media (max-width: 1100px) {
-        top: -${wrappermargintoptablet};
+    top: ${hashtagdesktop};
+    @media (max-width: 800px) {
+        top: ${hashtagmobile};
     }
 `
 

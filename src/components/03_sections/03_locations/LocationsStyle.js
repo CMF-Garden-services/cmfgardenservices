@@ -2,7 +2,7 @@ import styled, { keyframes, css } from "styled-components"
 import { GeneralTitle, Hashtag } from "../../01_constants/GeneralStyles"
 import { sizes } from "../../01_constants/Sizes"
 
-const { wrapperwidth, wrapperwidthtablet, wrappermargintop, wrappermargintoptablet } = sizes
+const { wrappermargintop, wrappermargintoptablet } = sizes
 
 const AnimationLargeImage = keyframes`
     0% {opacity: 0}
@@ -10,7 +10,7 @@ const AnimationLargeImage = keyframes`
 `
 
 const ShowLargeImage = css`
-    animation: ${AnimationLargeImage} 0.4s;
+    animation: ${AnimationLargeImage} 0.6s;
 `
 
 const AnimationDesktop = keyframes`
@@ -124,7 +124,7 @@ const LargeImageWrapper = styled.div`
     width: 50vw;
     height: 30vw;
     z-index: 99;
-    ${(({largeimg}) => largeimg ? ShowLargeImage : "")}
+    ${(({largeImg}) => largeImg ? ShowLargeImage : "")}
 
 `
 

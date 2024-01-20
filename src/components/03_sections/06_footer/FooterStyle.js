@@ -5,7 +5,8 @@ import { colors } from "../../01_constants/Colors"
 
 const { wrapperwidth, wrapperwidthtablet, wrappermargintoptablet } = sizes
 const { darkgreen } = colors
-const footer_gap = "30px";
+const footer_gap = "30px"
+const footer_gap_mobile = "20px"
 
 const Wrapper = styled(GeneralWrapper)`
     margin-bottom: 20px;
@@ -29,10 +30,17 @@ const FooterWrapper = styled.div`
     gap: ${footer_gap};
     color: white;
     background-color: ${darkgreen};
+    @media(max-width: 1100px) {
+        padding: ${footer_gap_mobile} 0;
+        gap: ${footer_gap_mobile};
+    }
 `
 
 const Logo = styled.img`
     width: 100px;
+    @media(max-width: 1100px) {
+        width: 70px;
+    }
 `
 
 const ContactsWrapper = styled.div`
@@ -41,11 +49,18 @@ const ContactsWrapper = styled.div`
     width: ${wrapperwidth};
     display: flex;
     justify-content: space-between;
-`
-const Contact = styled.div`
     font-family: "Rhodium Libre";
     font-family: "Montserrat";
     font-size: 1.2rem;
+    @media(max-width: 1100px) {
+        flex-direction: column;
+        gap: ${footer_gap_mobile};
+        align-items: center;
+        font-size: 0.7rem;
+    }
+`
+const Contact = styled.div`
+
 `
 
 const ContactLink = styled.a`
@@ -53,24 +68,6 @@ const ContactLink = styled.a`
 `
 
 const ContactCenter = styled(Contact)`
-    // position: absolute;
-    // left: 50%;
-    // transform: translate(-50%);
-`
-
-const Navbar = styled.div`
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-`
-
-const NavbarItem = styled.a`
-    text-decoration: none;
-    font-family: "Montserrat";
-    font-size: 0.7rem;
-    font-style: italic;
-    font-weight: 200;
-    color: #bfbfbf;
 `
 
 const Copyright = styled.div`
@@ -78,4 +75,4 @@ const Copyright = styled.div`
     font-size: 0.6rem;
 `
 
-export {Wrapper, HashtagFooter, Title, FooterWrapper, Logo, ContactsWrapper, Contact, ContactLink, ContactCenter, Navbar, NavbarItem, Copyright  }
+export {Wrapper, HashtagFooter, Title, FooterWrapper, Logo, ContactsWrapper, Contact, ContactLink, ContactCenter, Copyright  }

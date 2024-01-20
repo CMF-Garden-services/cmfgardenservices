@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Wrapper, MainImage, MottoWrapper, MottoText, Button } from "./HomeStyle";
+import { PlaceHolder, Wrapper, MainImage, MottoWrapper, MottoText, Button } from "./HomeStyle";
 import { sizes } from "../../01_constants/Sizes";
 import home from "../../../assets/02_home/home.jpg"
 import home_lq from "../../../assets/02_home/home_lq.jpg"
@@ -34,13 +34,15 @@ const Home = () => {
     const loaded = useImageLoader(home)
 
     return (
-        <Wrapper ref={ref} zIndex={zIndex} id="home">
-            {loaded ? <MainImage src={home} alt="home"/> : <MainImage src={home_lq} alt="home"/> }
+        <PlaceHolder>
+        {loaded ? <Wrapper ref={ref} zIndex={zIndex} id="home">
+            {loaded ?  <MainImage src={home} alt="home"/>  : <MainImage src={home_lq} alt="home"/> }
             <MottoWrapper>
                 <MottoText>Providing a reliable and friendly<br/> gardening service<br/> to the local community</MottoText>
                 <a href="#quote"><Button>REQUEST A QUOTE</Button></a>
             </MottoWrapper>
-        </Wrapper>
+        </Wrapper> : <div></div>}
+        </PlaceHolder>
     )
 }
 

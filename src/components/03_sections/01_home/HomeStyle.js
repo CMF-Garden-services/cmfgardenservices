@@ -6,6 +6,11 @@ import { colors } from "../../01_constants/Colors"
 const { wrapperwidth, wrapperwidthtablet, wrappermargintoptablet } = sizes
 const { darkgreen } = colors
 
+const PlaceHolder = styled.div`
+    width: 100%;
+    height: 100vw;
+`
+
 const Wrapper = styled.div`
     position: relative;
     width: 100vw;
@@ -78,4 +83,4 @@ const MottoText = styled.div`
 const Button = styled(GeneralButton)`
 `
 
-export {Wrapper, MainImage, MottoWrapper, MottoText, Button }
+export {PlaceHolder, Wrapper, MainImage, MottoWrapper, MottoText, Button }

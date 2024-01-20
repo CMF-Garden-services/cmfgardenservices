@@ -13,7 +13,7 @@ const NavbarWrapper = styled.div`
     height: ${navbarheight};
     width: ${wrapperwidth};
     font-size: 1rem;
-    z-index: 3;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,6 @@ const MenuWrapper = styled.div`
         transform: translate(-50%);
         height: 180px;
         opacity: ${(({clicked}) => clicked ? 0 : 1)};
-        // opacity: 1;
         width: 100vw;
         padding: 10px;
         flex-direction: column;

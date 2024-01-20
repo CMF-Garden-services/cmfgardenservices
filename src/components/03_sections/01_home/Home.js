@@ -8,9 +8,7 @@ import { useImageLoader } from "./useImageLoader";
 
 
 const Home = ({setSolidNavbar}) => {
-    const [zIndex, setZIndex] = useState(1)
     const ref = useRef(null)
-    const wrapperRef = useRef()
 
     useEffect (() => {
         const showBackground = () => {
@@ -18,10 +16,8 @@ const Home = ({setSolidNavbar}) => {
             const windowScroll = window.scrollY
             const showSolid = trigger - windowScroll
             if (showSolid >= 0) {
-                setZIndex(1)
                 setSolidNavbar(false)
             } else {
-                setZIndex(0)
                 setSolidNavbar(true)
             }
         }
@@ -37,7 +33,7 @@ const Home = ({setSolidNavbar}) => {
 
     return (
         <PlaceHolder>
-        {loaded ? <Wrapper ref={ref} zIndex={zIndex} id="home">
+        {loaded ? <Wrapper ref={ref} id="home">
             <MainImage src={home} alt="home"/>
             <MottoWrapper>
                 <MottoText>Providing a reliable and friendly<br/> gardening service<br/> to the local community</MottoText>

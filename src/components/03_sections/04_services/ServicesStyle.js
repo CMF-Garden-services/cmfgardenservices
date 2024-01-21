@@ -46,7 +46,7 @@ const ServiceWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     // justify-content: space-around;
-    gap: 20px;
+    // gap: 20px;
 `
 
 const IconWrapper = styled.div`
@@ -58,17 +58,19 @@ const IconWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-`
-
-const Icon = styled.img`
+    margin-bottom: 20px;
+    `
+    
+    const Icon = styled.img`
     width: 50%;
-`
-
-const IconCaption = styled.div`
+    `
+    
+    const IconCaption = styled.div`
     font-size: 1rem;
-`
-
-const IconDescription = styled.div`
+    margin-bottom: 20px;
+    `
+    
+    const IconDescription = styled.div`
     font-size: 0.8rem;
     text-align: center;
 `

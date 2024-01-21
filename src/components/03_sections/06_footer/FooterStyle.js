@@ -27,19 +27,21 @@ const FooterWrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: ${footer_gap};
+    // gap: ${footer_gap};
     color: white;
     background-color: ${darkgreen};
     @media(max-width: 1100px) {
         padding: ${footer_gap_mobile} 0;
-        gap: ${footer_gap_mobile};
+        // gap: ${footer_gap_mobile};
     }
 `
 
 const Logo = styled.img`
     width: 100px;
+    padding-bottom: ${footer_gap};
     @media(max-width: 1100px) {
         width: 70px;
+        padding-bottom: ${footer_gap_mobile};
     }
 `
 
@@ -52,19 +54,26 @@ const ContactsWrapper = styled.div`
     font-family: "Rhodium Libre";
     font-family: "Montserrat";
     font-size: 1.2rem;
+    padding-bottom: ${footer_gap};
     @media(max-width: 1100px) {
         flex-direction: column;
-        gap: ${footer_gap_mobile};
+        // gap: ${footer_gap_mobile};
         align-items: center;
         font-size: 0.7rem;
+        padding-bottom: ${footer_gap_mobile};
     }
 `
 const Contact = styled.div`
-
+    @media(max-width: 1100px) {
+        padding-bottom: ${footer_gap_mobile};
+    }
 `
 
 const ContactLink = styled.a`
     color: white;
+    @media(max-width: 1100px) {
+        padding-bottom: ${footer_gap_mobile};
+    }
 `
 
 const Copyright = styled.div`

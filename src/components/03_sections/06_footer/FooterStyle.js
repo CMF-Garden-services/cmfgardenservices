@@ -72,7 +72,10 @@ const ContactCenter = styled(Contact)`
 
 const Copyright = styled.div`
     font-family: "Montserrat";
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    @media(max-width: 1100px) {
+        font-size: 0.5rem
+    }
 `
 
 export {Wrapper, HashtagFooter, Title, FooterWrapper, Logo, ContactsWrapper, Contact, ContactLink, ContactCenter, Copyright  }

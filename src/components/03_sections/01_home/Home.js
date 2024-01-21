@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { PlaceHolder, Wrapper, MainImage, MottoWrapper, MottoText, Button } from "./HomeStyle";
+import { MainWrapper, PlaceHolder, SpinnerHome, Wrapper, MainImage, MottoWrapper, MottoText, Button } from "./HomeStyle";
 import { sizes } from "../../01_constants/Sizes";
 import home from "../../../assets/02_home/home.jpg"
 import home_lq from "../../../assets/02_home/home_lq.jpg"
@@ -32,7 +32,8 @@ const Home = ({setSolidNavbar}) => {
     const loaded = useImageLoader(home)
 
     return (
-        <PlaceHolder>
+        <MainWrapper>
+        <PlaceHolder loaded={loaded}> <SpinnerHome /> </PlaceHolder>
         {loaded ? <Wrapper ref={ref} id="home">
             <MainImage src={home} alt="home"/>
             <MottoWrapper>
@@ -40,7 +41,7 @@ const Home = ({setSolidNavbar}) => {
                 <a href="#quote"><Button>REQUEST A QUOTE</Button></a>
             </MottoWrapper>
         </Wrapper> : <div></div>}
-        </PlaceHolder>
+        </MainWrapper>
     )
 }
 

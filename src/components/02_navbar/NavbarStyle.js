@@ -47,7 +47,7 @@ const MenuWrapper = styled.div`
         padding: 10px;
         flex-direction: column;
         background-color: ${circlegreen};
-
+        opacity: 0.97;
     }
 `
 

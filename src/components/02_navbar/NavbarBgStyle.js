@@ -10,7 +10,7 @@ const NavbarBgWrapper = styled.div`
     background-color: #172B1C;
     background-color: #041A09;
     transition: ease-in-out 0.4s;
-    opacity: ${(({solidNavbar}) => solidNavbar ? "0.87" : "0")};
+    opacity: ${(({solidNavbar}) => solidNavbar ? "0.93" : "0")};
     top: ${(({solidNavbar}) => solidNavbar ? "0" : `-${navbarheight}`)};
     z-index: 1;
 `

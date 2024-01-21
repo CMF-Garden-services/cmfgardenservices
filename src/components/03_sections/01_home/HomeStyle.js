@@ -1,13 +1,32 @@
 import styled from "styled-components"
 import { GeneralButton } from "../../01_constants/GeneralStyles"
+import { Spinner } from "../../01_constants/Spinner"
 import { sizes } from "../../01_constants/Sizes"
+import { colors } from "../../01_constants/Colors"
 
 const { wrapperwidth, wrapperwidthtablet, wrappermargintoptablet } = sizes
+const { backgroundgreen } = colors
+
+const MainWrapper = styled.div`
+
+`
 
 const PlaceHolder = styled.div`
+    position: relative;
     width: 100%;
-    height: 60vw;
-    max-height: 100vh;
+    height: 100vh;
+    background-color: ${backgroundgreen};
+    opacity: 0.5;
+    z-index: 99;
+    display: ${(({loaded}) => loaded ? "none" : "block")}
+`
+
+const SpinnerHome = styled(Spinner)`
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 1;
 `
 
 const Wrapper = styled.div`
@@ -59,4 +78,4 @@ const MottoText = styled.div`
 const Button = styled(GeneralButton)`
 `
 
-export {PlaceHolder, Wrapper, MainImage, MottoWrapper, MottoText, Button }
+export { MainWrapper, PlaceHolder, SpinnerHome, Wrapper, MainImage, MottoWrapper, MottoText, Button }

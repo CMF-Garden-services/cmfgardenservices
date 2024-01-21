@@ -23,14 +23,16 @@ const Title = styled(GeneralTitle)`
 
 `
 const ServicesWrapper = styled.div`
-    padding: 2vw;
+    padding: 40px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 5vw;
+    gap: 40px;
     @media(max-width: 900px) {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 30px;
     }
     @media(max-width: 600px) {
         grid-template-rows: repeat(6, 1fr);
@@ -39,11 +41,12 @@ const ServicesWrapper = styled.div`
 `
 
 const ServiceWrapper = styled.div`
-    height: 250px;
+    // height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    // justify-content: space-around;
+    gap: 20px;
 `
 
 const IconWrapper = styled.div`

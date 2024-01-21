@@ -13,7 +13,7 @@ const HashTagQuote = styled(Hashtag)`
 const Title = styled(GeneralTitle)`
 `
 
-const Form = styled.form `
+const Form = styled.form`
     width: 60%;
     margin: 0 auto;
     @media(max-width: 800px) {
@@ -21,7 +21,7 @@ const Form = styled.form `
     }
 `
 
-const Label = styled.label `
+const Label = styled.label`
 @media(max-width: 800px) {
     font-size: 0.8rem;
 }
@@ -38,18 +38,29 @@ const LabelStar = styled(Label)`
 
 `
 
-const Input = styled.input `
+const Input = styled.input`
     display: block;
     width: 100%;
     height: 1.3rem;
     margin-bottom: 20px;
+    &&::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+     }
 `
 
-const TextArea = styled.textarea `
+const TextArea = styled.textarea`
     display: block;
     width: 100%;
     height: 150px;
     resize: vertical;
+    &&::-ms-input-placeholder {
+        font-style:italic;
+    }
+
+    &&::placeholder {
+        font-style:italic;
+    }
 `
 
 const Button = styled(GeneralButton)`

@@ -1,4 +1,4 @@
-import { Wrapper, HashtagFooter, Title, FooterWrapper, Logo, ContactsWrapper, Contact, ContactLink, ContactCenter, Copyright } from "./FooterStyle";
+import { Wrapper, HashtagFooter, Title, FooterWrapper, Logo, ContactsWrapper, Contact, ContactLink, Copyright } from "./FooterStyle";
 import logo from "../../../assets/01_navbar/CMF.png"
 
 

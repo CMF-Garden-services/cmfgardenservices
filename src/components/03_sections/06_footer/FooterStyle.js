@@ -67,9 +67,6 @@ const ContactLink = styled.a`
     color: white;
 `
 
-const ContactCenter = styled(Contact)`
-`
-
 const Copyright = styled.div`
     font-family: "Montserrat";
     font-size: 0.7rem;
@@ -78,4 +75,4 @@ const Copyright = styled.div`
     }
 `
 
-export {Wrapper, HashtagFooter, Title, FooterWrapper, Logo, ContactsWrapper, Contact, ContactLink, ContactCenter, Copyright  }
+export {Wrapper, HashtagFooter, Title, FooterWrapper, Logo, ContactsWrapper, Contact, ContactLink, Copyright  }

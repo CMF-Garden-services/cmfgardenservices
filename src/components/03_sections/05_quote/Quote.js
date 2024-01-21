@@ -15,7 +15,7 @@ const Quote = () => {
                 <Label htmlFor="email">Email Address</Label>
                 <Input type="email" id="email" name="email"/>
                 <Label htmlFor="message">Message</Label>
-                <TextArea type="textarea" id="message" name="message" placeholder="Please describe what services would you like to be done for your garden"/>
+                <TextArea type="textarea" id="message" name="message" placeholder="Please describe what services you would like to be done for your garden"/>
             <Button type="submit">SUBMIT</Button>
             </Form>
         </Wrapper>

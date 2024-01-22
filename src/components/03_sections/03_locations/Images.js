@@ -50,7 +50,7 @@ export const Images = [
     {
         image: wooten,
         image_large: wooten_large,
-        caption: "Wooten"
+        caption: "Wootton Wawen"
     }
 ]
 

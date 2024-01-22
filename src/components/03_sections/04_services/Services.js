@@ -17,42 +17,42 @@ const Services = () => {
                 <ServicesWrapper>
                     <ServiceWrapper>
                         <IconWrapper>
-                            <Icon src={mowing} />
+                            <Icon src={mowing} alt="mowing"/>
                         </IconWrapper>
                         <IconCaption>LAWN MOWING</IconCaption>
                         <IconDescription>Lawns should generally be mown weekly or fortnightly between March and October to keep them neat and in good condition</IconDescription>
                     </ServiceWrapper>
                     <ServiceWrapper>
                         <IconWrapper>
-                            <Icon src={garden} />
+                            <Icon src={garden} alt="garden"/>
                         </IconWrapper>
                         <IconCaption>GARDEN MAINTENANCE</IconCaption>
                         <IconDescription>Regularly maintaining a garden involves many things including weeding, applying fertilisers and pesticides, garden clearance etc.</IconDescription>
                     </ServiceWrapper>
                     <ServiceWrapper>
                         <IconWrapper>
-                            <Icon src={pruning} />
+                            <Icon src={pruning} alt="pruning"/>
                         </IconWrapper>
                         <IconCaption>PRUNING</IconCaption>
                         <IconDescription>The goal of pruning is to remove unwanted branches, improve the tree’s structure, and direct new, healthy growth</IconDescription>
                     </ServiceWrapper>
                     <ServiceWrapper>
                         <IconWrapper>
-                            <Icon src={hedge} />
+                            <Icon src={hedge} alt="hedge"/>
                         </IconWrapper>
                         <IconCaption>HEDGE CUTTING</IconCaption>
                         <IconDescription>A beautiful and healthy hedge makes a perfect frame for any garden!</IconDescription>
                     </ServiceWrapper>
                     <ServiceWrapper>
                         <IconWrapper>
-                            <Icon src={leaves} />
+                            <Icon src={leaves} alt="leaves"/>
                         </IconWrapper>
                         <IconCaption>LEAVES TIDY UP</IconCaption>
                         <IconDescription>Leaves cleanup is not only done to make your yard look neater and well-kept, but it also affects the overall health of your yard</IconDescription>
                     </ServiceWrapper>
                     <ServiceWrapper>
                         <IconWrapper>
-                            <Icon src={wildlife} />
+                            <Icon src={wildlife} alt="wildlife"/>
                         </IconWrapper>
                         <IconCaption>WILDLIFE AREAS</IconCaption>
                         <IconDescription>Creating the right habitat for species to find shelter and food is key. Lawns, water features, woodpiles, compost heaps, trees and hedges can all provide a perfect place for wildlife to live.</IconDescription>

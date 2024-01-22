@@ -20,7 +20,7 @@ const About = () => {
                     PA1 and PA6 licences so you can book my services with peace of mind. I cover all areas between the
                     Solihull area and the Stratford upon Avon area.
                 </AboutText>
-                <Image src={about} />
+                <Image src={about} alt="about"/>
             </TextImageWrapper>
         </Wrapper>
     )

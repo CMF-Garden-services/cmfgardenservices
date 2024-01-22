@@ -22,7 +22,7 @@ const Locations = () => {
     return (
         <Wrapper>
             {largeImg && <LargeImageWrapper largeImg={largeImg}>
-                <LargeImage src={imageId} />
+                <LargeImage src={imageId} alt="large image"/>
                 <ImageCaption>{imageCaption}</ImageCaption>
                 <CloseIcon onClick={hideLargeImage}>
                 <IoClose />
@@ -35,12 +35,12 @@ const Locations = () => {
                 <ImagesWrapper>
                     {Images.map((record, index) => (
                         <ImageWrapper key={index} onClick={showLargeImage}>
-                            <Image id={record.image_large} name={record.caption} src={record.image} />
+                            <Image id={record.image_large} name={record.caption} src={record.image} alt={record.caption}/>
                             <ImageCaption>{record.caption}</ImageCaption>
                         </ImageWrapper>))}
                     {Images.map((record, index) => (
                         <ImageWrapper key={index} onClick={showLargeImage}>
-                            <Image id={record.image_large} name={record.caption} src={record.image} />
+                            <Image id={record.image_large} name={record.caption} src={record.image} alt={record.caption}/>
                             <ImageCaption>{record.caption}</ImageCaption>
                         </ImageWrapper>))}
                 </ImagesWrapper>

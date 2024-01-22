@@ -8,7 +8,7 @@ const Locations = () => {
             <HashtagFooter id="footer"/>
             <Title>Please Get In Touch</Title>
             <FooterWrapper>
-                <Logo src={logo} />
+                <Logo src={logo} alt="logo"/>
                 <ContactsWrapper>
                     <ContactLink href= "mailto: chris@cmfgardenservices.co.uk"> chris@cmfgardenservices.co.uk </ContactLink> 
                     <Contact> 07873 122-257 </Contact>

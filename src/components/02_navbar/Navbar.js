@@ -13,7 +13,7 @@ const clickHamb = () => {
 
     return (
             <NavbarWrapper>
-                <Logo src={logo} />
+                <Logo src={logo} alt="logo"/>
                 <MenuWrapper clicked={clicked} onClick={clickHamb}>
                     <MenuItem href="#home">Home</MenuItem>
                     <MenuItem href="#about">About</MenuItem>

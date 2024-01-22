@@ -3,7 +3,7 @@ import { GeneralWrapper, GeneralTitle, Hashtag } from "../../01_constants/Genera
 import { sizes } from "../../01_constants/Sizes"
 import { colors } from "../../01_constants/Colors"
 
-const { wrapperwidth, wrapperwidthtablet, wrappermargintoptablet } = sizes
+const { wrapperwidth } = sizes
 const { darkgreen } = colors
 const footer_gap = "30px"
 const footer_gap_mobile = "20px"
@@ -17,6 +17,7 @@ const HashtagFooter = styled(Hashtag)`
 
 const Title = styled(GeneralTitle)`
 `
+
 const FooterWrapper = styled.div`
     position: relative;
     width: 100vw;
@@ -27,12 +28,10 @@ const FooterWrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    // gap: ${footer_gap};
     color: white;
     background-color: ${darkgreen};
     @media(max-width: 1100px) {
         padding: ${footer_gap_mobile} 0;
-        // gap: ${footer_gap_mobile};
     }
 `
 
@@ -57,12 +56,12 @@ const ContactsWrapper = styled.div`
     padding-bottom: ${footer_gap};
     @media(max-width: 1100px) {
         flex-direction: column;
-        // gap: ${footer_gap_mobile};
         align-items: center;
         font-size: 0.7rem;
         padding-bottom: ${footer_gap_mobile};
     }
 `
+
 const Contact = styled.div`
     @media(max-width: 1100px) {
         padding-bottom: ${footer_gap_mobile};
@@ -84,4 +83,4 @@ const Copyright = styled.div`
     }
 `
 
-export {Wrapper, HashtagFooter, Title, FooterWrapper, Logo, ContactsWrapper, Contact, ContactLink, Copyright  }
+export { Wrapper, HashtagFooter, Title, FooterWrapper, Logo, ContactsWrapper, Contact, ContactLink, Copyright  }

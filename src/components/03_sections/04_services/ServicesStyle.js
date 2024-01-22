@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { GeneralWrapper, GeneralTitle, Hashtag } from "../../01_constants/GeneralStyles";
 import { colors } from "../../01_constants/Colors";
-import { sizes } from "../../01_constants/Sizes";
 
 const { circlegreen, backgroundgreen } = colors
-const { wrappermargintoptablet } = sizes
 
 const Wrapper = styled(GeneralWrapper)`
 
@@ -41,12 +39,9 @@ const ServicesWrapper = styled.div`
 `
 
 const ServiceWrapper = styled.div`
-    // height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: space-around;
-    // gap: 20px;
 `
 
 const IconWrapper = styled.div`
@@ -59,18 +54,18 @@ const IconWrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    `
+`
     
-    const Icon = styled.img`
+const Icon = styled.img`
     width: 50%;
-    `
+`
     
-    const IconCaption = styled.div`
+const IconCaption = styled.div`
     font-size: 1rem;
     margin-bottom: 20px;
-    `
+`
     
-    const IconDescription = styled.div`
+const IconDescription = styled.div`
     font-size: 0.8rem;
     text-align: center;
 `

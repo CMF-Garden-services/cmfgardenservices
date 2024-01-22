@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { MainWrapper, PlaceHolder, SpinnerHome, Wrapper, MainImage, MottoWrapper, MottoText, Button } from "./HomeStyle";
-import { sizes } from "../../01_constants/Sizes";
 import home from "../../../assets/02_home/home.jpg"
-import home_lq from "../../../assets/02_home/home_lq.jpg"
 import { useImageLoader } from "./useImageLoader";
 
 

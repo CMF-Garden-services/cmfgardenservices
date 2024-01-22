@@ -1,1 +1,1 @@
-This is a landing page for a landscaping business
+This is a single-page website for a leading garden services business in Soluhull/Stratford-upon-Avon area

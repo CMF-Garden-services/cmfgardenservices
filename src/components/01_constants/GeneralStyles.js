@@ -4,7 +4,6 @@ import { colors } from "./Colors";
 
 const{ wrapperwidth, wrappermargintop, wrappermargintoptablet, wrapperwidthtablet, hashtagdesktop, hashtagmobile } = sizes
 const { darkgreen } = colors
-const marginhashtagmobile = (wrappermargintoptablet - 20)
 
 const GeneralWrapper = styled.div`
     position: relative;

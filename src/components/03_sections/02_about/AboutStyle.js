@@ -29,7 +29,6 @@ const TextImageWrapper = styled.div`
 `
 
 const AboutText = styled.div`
-    // font-family: "Josefin Sans", sans-serif;
     font-size: 1.8rem;
     text-align: justify;
     @media(max-width: 1500px) {

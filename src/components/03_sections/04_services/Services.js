@@ -20,21 +20,21 @@ const Services = () => {
                             <Icon src={mowing} alt="mowing"/>
                         </IconWrapper>
                         <IconCaption>LAWN MOWING</IconCaption>
-                        <IconDescription>Lawns should generally be mown weekly or fortnightly between March and October to keep them neat and in good condition</IconDescription>
+                        <IconDescription>Lawns should generally be mown weekly or fortnightly to keep them neat and in good condition</IconDescription>
                     </ServiceWrapper>
                     <ServiceWrapper>
                         <IconWrapper>
                             <Icon src={garden} alt="garden"/>
                         </IconWrapper>
                         <IconCaption>GARDEN MAINTENANCE</IconCaption>
-                        <IconDescription>Regularly maintaining a garden involves many things including weeding, applying fertilisers and pesticides, garden clearance etc.</IconDescription>
+                        <IconDescription>Regularly maintaining a garden involves many things including weeding, border maintenance, garden clearance etc.</IconDescription>
                     </ServiceWrapper>
                     <ServiceWrapper>
                         <IconWrapper>
                             <Icon src={pruning} alt="pruning"/>
                         </IconWrapper>
                         <IconCaption>PRUNING</IconCaption>
-                        <IconDescription>The goal of pruning is to remove unwanted branches, improve the tree’s structure, and direct new, healthy growth</IconDescription>
+                        <IconDescription>The goal of pruning is to remove unwanted branches, improve the shrubs & trees structure, and direct new, healthy growth</IconDescription>
                     </ServiceWrapper>
                     <ServiceWrapper>
                         <IconWrapper>

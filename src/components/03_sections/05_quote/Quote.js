@@ -7,7 +7,7 @@ const Quote = () => {
             <Title>
                 Request a Quote
             </Title>
-            <Form action="https://formsubmit.co/vikhulei@gmail.com" method="POST">
+            <Form action="https://formsubmit.co/chris@cmfgardenservices.co.uk" method="POST">
                 <LabelStar htmlFor="name">Name</LabelStar>
                 <Input type="text" id="name" name="name" required/>
                 <LabelStar htmlFor="phone">Phone Number</LabelStar>

@@ -12,7 +12,7 @@ const Locations = () => {
                 <ContactsWrapper>
                     <ContactLink href= "mailto: chris@cmfgardenservices.co.uk"> chris@cmfgardenservices.co.uk </ContactLink> 
                     <Contact> 07873 122-257 </Contact>
-                    <ContactLink href="www.cmfgardenservices.co.uk"> www.cmfgardenservices.co.uk </ContactLink>
+                    <ContactLink href="https://www.cmfgardenservices.co.uk"> https://www.cmfgardenservices.co.uk </ContactLink>
                 </ContactsWrapper>
                 <Copyright>&copy; Viktor Hulei &nbsp;&nbsp;&nbsp; All Rights Reserved</Copyright>
             </FooterWrapper>
